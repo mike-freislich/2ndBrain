@@ -3,9 +3,17 @@ tags:
   - meeting
   - sigma
 ---
+# 2026-05-06
+- ### Cycle Review
+	- Define Needs for the ROM distribution process and determine solution based on that #todo 
+		- this is relating to the separate .apk files for language
+	- Words on items (localisation headaches)
+		- squiggles / symbols instead of words
+	- OneBillion tablet restart can be done by kids by holding button for 12 seconds or something similar.
 
 
---
+
+---
 # 2026-05-05
 
 - ## Product Management [[Nitin Kashyap]], [[Paul van Zyl]], Mike 
