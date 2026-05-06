@@ -3,6 +3,9 @@ tags:
   - meeting
   - sigma
 ---
+
+
+
 # 2026-05-05
 
 - ## Product Management [[Nitin Kashyap]], [[Paul van Zyl]], Mike 
