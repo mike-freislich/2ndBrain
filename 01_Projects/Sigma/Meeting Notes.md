@@ -10,7 +10,9 @@ tags:
 	- Words on items (localisation headaches)
 		- squiggles / symbols instead of words
 	- OneBillion tablet restart can be done by kids by holding button for 12 seconds or something similar.
-
+- ### Cycle Reflection
+	- How to be inclusive enough vs. make progress on new concepts?
+		- [[paul van zyl]] I think the overall architecture documentation will help e.g. solution diagram and links #todo 
 
 
 ---
