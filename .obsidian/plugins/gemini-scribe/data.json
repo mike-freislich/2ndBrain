@@ -1,9 +1,9 @@
 {
-  "apiKeySecretName": "gemini-obsidian",
+  "apiKeySecretName": "obsidian-gemini",
   "chatModelName": "gemini-2.5-pro",
   "summaryModelName": "gemini-flash-latest",
   "completionsModelName": "gemini-flash-lite-latest",
-  "imageModelName": "gemini-2.5-flash-image",
+  "imageModelName": "gemini-3.1-pro-preview",
   "summaryFrontmatterKey": "summary",
   "userName": "Mike",
   "chatHistory": true,
@@ -15,7 +15,7 @@
   "modelDiscovery": {
     "enabled": true,
     "autoUpdateInterval": 24,
-    "lastUpdate": 1777540667986,
+    "lastUpdate": 1778059053220,
     "fallbackToStatic": true
   },
   "allowSystemPromptOverride": false,
@@ -485,7 +485,7 @@
         "thinking": true
       }
     ],
-    "lastUpdated": 1777540898398,
+    "lastUpdated": 1777963542017,
     "success": true
   }
 }
