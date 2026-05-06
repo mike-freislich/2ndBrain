@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Projects/FLA/FLDay06/FLDay UTM string.md",
+                "file": "01_Projects/FLA/FLDay06/FLDay06 - Facilitation notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FLDay UTM string"
+              "title": "FLDay06 - Facilitation notes"
             }
           }
         ]
@@ -180,6 +180,7 @@
   },
   "active": "1d37d01204578409",
   "lastOpenFiles": [
+    "01_Projects/FLA/FLDay06/FLDay UTM string.md",
     "01_Projects/FLA/FLDay06/FLDay06 - Facilitation notes.md",
     "gemini-scribe/Skills"
   ]
