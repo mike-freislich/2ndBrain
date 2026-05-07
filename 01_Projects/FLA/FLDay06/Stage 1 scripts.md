@@ -37,6 +37,9 @@
 
 "Next on stage one is Cameron Leask. Cameron will share a story about connecting all three Flight Levels across multiple organizations — from boardroom strategy to work happening on building sites. This is about creating one golden thread through a complex system, so strategy, coordination, and delivery stop living in separate worlds."
 
+- Challenge of coordination = cognitive load
+- 
+
 ---
 ### Speaker 4: Victor Fairén
 
