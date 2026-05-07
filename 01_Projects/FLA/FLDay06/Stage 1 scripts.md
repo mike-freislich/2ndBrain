@@ -99,3 +99,6 @@
 ### Speaker 6: Craeg Strong
 
 "Our final talk on stage one is from Craeg Strong, Flight Levels Professional®. Craeg will take us into the New York City Housing Authority, the largest public housing authority in North America. This is a story about a huge backlog, urgent operational pressure, and how Flight Levels helped create transparency, prioritization, and better system delivery in a highly constrained environment."
+https://us06web.zoom.us/j/86258093937?pwd=IwbXDuQSaNnbmtrYBac4J8BsXTQOBG.1
+
+https://us06web.zoom.us/j/86258093937?pwd=IwbXDuQSaNnbmtrYBac4J8BsXTQOBG.1
