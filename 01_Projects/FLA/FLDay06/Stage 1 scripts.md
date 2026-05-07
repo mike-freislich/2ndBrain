@@ -40,7 +40,14 @@
 - Challenge of coordination = cognitive load
 	- Objectives -> Initiatives -> Work
 	- visualising initiatives yielded a huge number of initiatives (in the messy middle)
-	- 
+	- Signal Degredation
+		- Reporting Packs & Strategy Decks (disconnected / manual updates)
+		- Distortion (granularity)
+		- Delay (Quarterly review)
+		- Dissonance (disconnected reporting)
+		- Dissipation (absence of structure - no action taken)
+		- Disappearance (silent omission)
+	- ![[Screenshot 2026-05-07 at 14.55.49.png]]
 
 ---
 ### Speaker 4: Victor Fairén
