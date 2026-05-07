@@ -80,7 +80,10 @@
 
 "Next on stage one is Troy Magennis. Troy will look at dependency management in Flight Levels systems — and what changes when AI engineering enters the picture. The key question is: if AI changes some constraints, what new dependencies appear, and how can Flight Levels help us see and manage them before they slow down value delivery?"
 
-
+- AI disappointment loop
+- Blockers Now / Past -- dependencies future
+- blockers could be a predictor of dependencies in the future
+- 
 
 
 
