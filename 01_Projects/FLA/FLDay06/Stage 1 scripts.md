@@ -104,6 +104,9 @@ https://us06web.zoom.us/j/86258093937?pwd=IwbXDuQSaNnbmtrYBac4J8BsXTQOBG.1
 https://us06web.zoom.us/j/86258093937?pwd=IwbXDuQSaNnbmtrYBac4J8BsXTQOBG.1
 
 
-- Understand the problem
+- Understand the problem -- Massive and growing backlog (drinking from a firehose)
 - Identify key leverage points
+- 6 months to implement a small change
+- Interviews:
+	- interesting that the good stuff comes from anonymized survey ;)
 - 
