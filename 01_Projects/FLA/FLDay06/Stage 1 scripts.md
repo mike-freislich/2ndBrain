@@ -90,7 +90,8 @@
 	- high impact
 - Resource dependencies ()
 - Alignment Dependency
-	- 
+	- choosing the right work...  (reduce alignment and resource constraints)
+	- review depth
 
 
 
