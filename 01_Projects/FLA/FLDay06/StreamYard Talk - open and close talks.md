@@ -1,0 +1,27 @@
+
+## Talk opening
+* Tech Check
+* remove speaker from stage
+* remove slides from stage
+* mute myself
+* set overlay
+* start the music
+* Go Live
+* ....
+* Fade music and stop
+* Unmute -> Remove Overlay
+* "And the next speaker is... "
+* Bring speaker on stage - talk about / intro
+* Bring slides on stage and "good luck"
+* Remove myself from stage & mute
+
+
+## Talk closing
+- unmute me and add stage
+- Thank you for your talk
+- Next you go to the Q&A session - "Join" down in the program.
+- add overlay back
+- Take speaker off stage
+- start music
+- leave the stream
+- Join next stream
