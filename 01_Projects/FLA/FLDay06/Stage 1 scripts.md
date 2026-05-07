@@ -110,7 +110,7 @@ https://us06web.zoom.us/j/86258093937?pwd=IwbXDuQSaNnbmtrYBac4J8BsXTQOBG.1
 - Interviews:
 	- interesting that the good stuff comes from anonymized survey ;)
 	- Tell us who we need to fire
-- Using and respecting the language of the organisation
+- **Using and respecting the language of the organisation**
 	- and mapping it to the operational model
 - Design of FL2 and FL3 in 3 weeks
 - 
