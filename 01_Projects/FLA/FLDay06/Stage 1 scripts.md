@@ -3,6 +3,14 @@
 
 "Next on stage one is Mathias Tölken, Flight Levels Professional®. Mathias will take us into BASF Tamol, where nearly 150 people moved from Excel-based coordination chaos to a working Flight Level 2 system in Businessmap. You’ll hear what changed in daily work, how flow became visible, and what measurable impact this had on WIP, cycle time, maintenance cost, and product quality."
 
+1. Manager conviction and Patience
+2. Professional and unbiased help
+3. Internal dedicated change team
+
+- Some incredible improvements!
+- It wasn't magic - It took deliberate action
+- No need to kick anyone's backside!
+
 ---
 ### Speaker 2: Peter Faulks
 
