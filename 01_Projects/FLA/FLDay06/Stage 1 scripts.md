@@ -48,6 +48,7 @@
 		- Dissipation (absence of structure - no action taken)
 		- Disappearance (silent omission)
 	- ![[Screenshot 2026-05-07 at 14.55.49.png]]
+	- Realtime - connection between the work, initiatives, team Objectives, Directorate objectives.
 
 ---
 ### Speaker 4: Victor Fairén
