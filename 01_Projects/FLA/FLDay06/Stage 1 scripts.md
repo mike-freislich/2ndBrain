@@ -21,6 +21,14 @@
 - What if you don't have support?
 	- Alternative source of power (not just about position in org)
 		- social network (influence network) - CoP
+		- Start where you have influence 
+		- Show results
+		- Commitment vs. Compliance
+	- Flight Levels simplified the change landscape (1+2 first)
+		- 100 - 700 ppl involved in 2 years?!
+	- Businessmap
+		- simple and engaging to work with
+	- Calm Rebel Leadership
 		- 
 
 
