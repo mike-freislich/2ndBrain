@@ -57,13 +57,20 @@
 
 - Pharma - new product trigger for change
 - Common sense is not common
-- Beuracratic tool - no flow
+- Buracratic tool - no flow
 - Process lacked end to end visibility
 	- risks uncovered late
 	- delivery late
 	- roles / governance
 - Making work visible
 	- understanding what each other are doing.
+- Tool became part of the communication process
+	- Instant,  realtime, metrics and proof of improvement
+- Change approach
+	- Change from where you are
+	- Pilot
+	- making the wow explicit and visible
+	- turning the tool into something that works for us, rather than us working for the tool
 	- 
 
 ---
