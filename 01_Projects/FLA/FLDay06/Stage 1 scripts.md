@@ -16,6 +16,14 @@
 
 "Now we welcome Peter Faulks to stage one. This session is for everyone who has ever thought, “We don’t have the sponsorship, the timing, or the ideal setup yet.” Peter will talk about taking off anyway — using Flight Levels to create visible value first, and letting momentum grow from there."
 
+- Org system will resist - it doesn't like change
+- "we'll only get so far without support from upper management"
+- What if you don't have support?
+	- Alternative source of power (not just about position in org)
+		- social network (influence network) - CoP
+		- 
+
+
 ---
 ### Speaker 3: Cameron Leask
 
