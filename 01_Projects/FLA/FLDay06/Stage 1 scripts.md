@@ -84,7 +84,13 @@
 - Blockers Now / Past -- dependencies future
 - blockers could be a predictor of dependencies in the future
 - FL3 -- more articulate around "why" the desired order
-- 
+- Knowledge dependencies (need to learn before we start)
+	- Specialists training AI's - reduce the time / delay
+- Task dependencies (can't start until something else is done)
+	- high impact
+- Resource dependencies ()
+- Alignment Dependency
+	- 
 
 
 
