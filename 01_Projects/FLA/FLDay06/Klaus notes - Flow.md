@@ -21,7 +21,7 @@
 
 ---
 
-## 2. Lage der Nation - Klaus
+## 2. State of the Nation - Klaus
 
 > I want to start with a few words about why I think Flight Levels is more relevant right now than ever.
 >
