@@ -93,7 +93,7 @@
 >
 > For Flight Levels Day participants, the Flight Levels Academy has prepared a few event offers.
 >
-> There will be **25% off self-paced Flight Levels workshops**, including the Businessmap FL2 workshop and the Flight Levels and Mindset workshop, with the code **FLDAY26**.
+> There will be **25% off self-paced Flight Levels workshops**, including the Businessmap FL2 workshop and the Flight Levels and Mindset workshop, with the code **FLDAY2026**.
 >
 > Businessmap is also offering a **90-day extended trial** for conference participants.
 >
