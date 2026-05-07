@@ -24,7 +24,7 @@
 		- Start where you have influence 
 		- Show results
 		- **Commitment vs. Compliance**
-	- Flight Levels simplified the change landscape (1+2 first)
+	- Flight Levels simplified the business agility change landscape (1+2 first)
 		- **100 - 700 ppl involved in 2 years?!**
 	- Businessmap
 		- **simple and engaging to work with**
