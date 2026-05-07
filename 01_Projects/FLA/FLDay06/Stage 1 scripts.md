@@ -83,6 +83,7 @@
 - AI disappointment loop
 - Blockers Now / Past -- dependencies future
 - blockers could be a predictor of dependencies in the future
+- FL3 -- more articulate around "why" the desired order
 - 
 
 
