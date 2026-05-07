@@ -102,3 +102,8 @@
 https://us06web.zoom.us/j/86258093937?pwd=IwbXDuQSaNnbmtrYBac4J8BsXTQOBG.1
 
 https://us06web.zoom.us/j/86258093937?pwd=IwbXDuQSaNnbmtrYBac4J8BsXTQOBG.1
+
+
+- Understand the problem
+- Identify key leverage points
+- 
