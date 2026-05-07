@@ -55,6 +55,17 @@
 
 "Now we welcome Victor Fairén to stage one. This talk is about a familiar trap: improving teams while the organization around them still blocks flow. Victor will share how small, practical steps helped expand from local improvement to broader coordination — and which decisions really mattered along the way."
 
+- Pharma - new product trigger for change
+- Common sense is not common
+- Beuracratic tool - no flow
+- Process lacked end to end visibility
+	- risks uncovered late
+	- delivery late
+	- roles / governance
+- Making work visible
+	- understanding what each other are doing.
+	- 
+
 ---
 ### Speaker 5: Troy Magennis
 
