@@ -11,7 +11,7 @@ This vault is a personal knowledge management system designed for project and ta
 The vault is organized using a numeric prefix system to order top-level folders, suggesting a workflow-based approach. The primary organizational pillars are:
 
 - **`00_Inbox`**: A starting point for new information, containing a `Daily` folder for time-based notes in `YYYY-MM-DD` format.
-- **`01_Projects`**: The core of the vault, where each subfolder represents a distinct project (e.g., `Sigma`, `LevelUp`, `FLA`). Notes related to a specific project are housed within its folder.
+- **`01_Projects`**: The core of the vault, where each subfolder represents a distinct project (e.g., `Sigma`, `LevelUp`, `FLA`, `BusinessMap`, `InfinityModular`). Notes related to a specific project are housed within its folder.
 - **`90_Meta`**: Contains supporting materials for the vault itself, most notably a `Templates` folder which houses templates for recurring note types like the `Daily Note`.
 - **`91_Attachments`**: A standard repository for non-markdown files like images or documents.
 
@@ -21,10 +21,11 @@ This structure suggests a system for capturing daily activities and funneling re
 
 - Project Management
 - Portfolio Management
-- Project: Sigma
-- Project: LevelUp
-- Project: InfinityModular
+- Project: BusinessMap
 - Project: FLA
+- Project: InfinityModular
+- Project: LevelUp
+- Project: Sigma
 - Daily Logging & Journaling
 
 ## User Preferences

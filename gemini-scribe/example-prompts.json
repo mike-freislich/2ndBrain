@@ -1,18 +1,18 @@
 [
   {
-    "icon": "book-open",
-    "text": "What are the key points in the FLDay06 note for the FLA project?"
+    "icon": "sparkles",
+    "text": "Consolidate all the script notes from the FLDay06 folder into a single facilitation guide for the event."
+  },
+  {
+    "icon": "lightbulb",
+    "text": "Review the Meeting Notes in the Sigma project and create a checklist of any action items mentioned."
+  },
+  {
+    "icon": "globe",
+    "text": "Research competitors for modular systems like TheMod and create a new note in the InfinityModular project."
   },
   {
     "icon": "file-plus",
-    "text": "Create a new note in the LevelUp project folder outlining initial project goals."
-  },
-  {
-    "icon": "link",
-    "text": "Are there any connections between the portfolio management note and my daily note from today?"
-  },
-  {
-    "icon": "folder-tree",
-    "text": "Create a summary of all my project folders and their current status."
+    "text": "Draft a new project brief for LevelUp, including a proposed timeline and key objectives."
   }
 ]
