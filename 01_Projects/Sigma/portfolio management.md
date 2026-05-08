@@ -12,8 +12,11 @@ tags:
 > 
 > 1. **Substantially superior product**
 > 	1. Curriculum coverage
+> 		1. Significantly greater coverage of framework skillsets in literacy and numeracy as compared to OneBillion/OneCourse
+> 		2. Defined our own Numeracy and Literacy frameworks 
 > 	2. Deeper assessment
 > 	3. Personalisation
+> 	
 > 2. **Wider range of ages**
 > 	1. 
 > 3. **Learner profiles**
