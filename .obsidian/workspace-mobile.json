@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Projects/FLA/FLDay06/FLDay06 - speaker calendar invites.md",
+                "file": "01_Projects/FLA/FLDay06/2. StreamYard Talk - open and close talks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FLDay06 - speaker calendar invites"
+              "title": "2. StreamYard Talk - open and close talks"
             }
           }
         ]
@@ -178,12 +178,16 @@
       "gemini-scribe:Gemini Scribe: Agent Mode": false
     }
   },
-  "active": "1d37d01204578409",
+  "active": "0e119cc79394a9db",
   "lastOpenFiles": [
-    "01_Projects/InfinityModular/MegaRack/MegaRack.md",
     "01_Projects/FLA/FLDay06/2. StreamYard Talk - open and close talks.md",
-    "01_Projects/FLA/FLDay06/Stage 1 scripts.md",
     "01_Projects/FLA/FLDay06/3. Closing.md",
+    "01_Projects/FLA/FLDay06/FLDay UTM string.md",
+    "01_Projects/FLA/FLDay06/FLDay06 - Facilitation notes.md",
+    "01_Projects/FLA/FLDay06/FLDay06 - speaker calendar invites.md",
+    "01_Projects/FLA/FLDay06/FLDay06 - Ticket Details.md",
+    "01_Projects/FLA/FLDay06/Stage 1 scripts.md",
+    "01_Projects/InfinityModular/MegaRack/MegaRack.md",
     "/91_Attachments/Screenshot 2026-05-07 at 14.55.49.png",
     "91_Attachments/Screenshot 2026-05-07 at 14.55.49.png",
     "/91_Attachments",
@@ -200,8 +204,6 @@
     "01_Projects/InfinityModular/MegaRack",
     "/01_Projects/InfinityModular",
     "/01_Projects",
-    "01_Projects/FLA/FLDay06/FLDay06 - Facilitation notes.md",
-    "01_Projects/FLA/FLDay06/FLDay UTM string.md",
     "gemini-scribe/Skills"
   ]
 }

@@ -3,12 +3,6 @@ tags:
   - meeting
   - sigma
 ---
-# 2026-05-08
-- ## Cycle Planning
-	- 
-
-
-
 # 2026-05-06
 - ### Cycle Review
 	- Define Needs for the ROM distribution process and determine solution based on that #todo 
