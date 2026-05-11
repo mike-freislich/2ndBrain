@@ -27,10 +27,10 @@ tags:
 > 	3. Personalisation
 > 	
 > 2. **Wider range of ages**
+> 3. 
+> 4. **Learner profiles**
 > 	1. 
-> 3. **Learner profiles**
-> 	1. 
-> 4. **Languages that enable >60% of learners to achieve fluent or emergent fluent before starting Gr.5**
+> 5. **Languages that enable >60% of learners to achieve fluent or emergent fluent before starting Gr.5**
 > 	1. 
 
 
@@ -58,3 +58,27 @@ tags:
 > 
 > 1. wef
 > 2. 
+
+
+
+--- 
+# Vision
+
+North Star : 3X improvement in skills and literacy
+rollout to 4 million 
+
+## Primarily : More effective
+- **Coverage** - scope and depth - Content Map
+- **Engagement** - based on research UX, speech, contextualization, variation
+- **Personalization** - Activity, Feedback, Assessment, Lesson selection
+
+## Foundational Artefacts
+* Content Map
+* Analytics
+
+## Pilot
+* ### M1
+	* x% coverage (not 100%)
+	* Identity not necessary
+* ### M2
+	* + Identity 
