@@ -22,7 +22,7 @@ tags:
 > 			2. Literacy = Nanisca(39.2%), OneBillion(13.8%)
 > 	2. Assessment Depth
 > 		1. At present, OneBillion's solution is **learner identity agnostic**, and by design enforces a diagnostic at the start of every individual learner session, that attempts to land learners at a specific point in the linear curriculum.
-> 		2. Nanisca will sup
+> 		2. Nanisca will support coldstart and warmstart modes. Warmstart depends on Learner Identity.
 > 		3. 
 > 	3. Personalisation
 > 	
