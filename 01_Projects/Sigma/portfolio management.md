@@ -6,7 +6,7 @@ tags:
 ---
 ---
 # Nanisca Plan
-[[Nitin Kashyap]]'s request for detailing the current state and next steps as measured by the 5 initial goals of the solution.
+[[Nitin Kashyap]]'s request for detailing the current state and next steps as measured by the 5 initial goals of the solution. 2222222
 
 ## Goal A
 > **develop a substantially superior product that can serve a wider range of ages, learner profiles, and languages that enables 60%+ of learners to achieve fluent or emergent fluent by the end of Standard 4**

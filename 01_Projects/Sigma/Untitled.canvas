@@ -4,16 +4,21 @@
 		{"id":"5db5512b8978e795","type":"text","text":"Store Reducer","x":-345,"y":-160,"width":250,"height":60},
 		{"id":"f326a724fcc7e72a","type":"text","text":"Game State Store","x":-60,"y":100,"width":250,"height":60},
 		{"id":"9a27b98d2946bda5","type":"text","text":"Analytics","x":-320,"y":190,"width":250,"height":60},
-		{"id":"d3dfd19cf8349b51","type":"text","text":"Godot","x":-320,"y":-340,"width":200,"height":50},
 		{"id":"15cf988bc9ff8296","type":"text","text":"Makes action","x":-60,"y":-160,"width":250,"height":60,"color":"4"},
 		{"id":"bd6af9f5a83b1ad5","type":"file","file":"91_Attachments/unnamed.png","x":280,"y":-160,"width":502,"height":437},
-		{"id":"1832a9d0b633a084","x":657,"y":-190,"width":250,"height":60,"type":"text","text":"Let's find the why's and trace them..."},
-		{"id":"c783d4b9c2cd6549","type":"text","text":"","x":700,"y":-80,"width":250,"height":60}
+		{"id":"1832a9d0b633a084","type":"text","text":"Let's find the why's and trace them...","x":657,"y":-190,"width":250,"height":60},
+		{"id":"c783d4b9c2cd6549","type":"text","text":"","x":700,"y":-80,"width":250,"height":60},
+		{"id":"d3dfd19cf8349b51","type":"text","text":"Godot","x":-320,"y":-340,"width":200,"height":50},
+		{"id":"0d4389d680d0f082","type":"text","text":"","x":378,"y":-322,"width":250,"height":60},
+		{"id":"4775d08daeaf1e36","type":"text","text":"Godot","x":40,"y":-460,"width":200,"height":50},
+		{"id":"5e0ddd24954632e5","type":"file","file":"01_Projects/Sigma/portfolio management.md","x":280,"y":420,"width":710,"height":740}
 	],
 	"edges":[
 		{"id":"bf14b361c84d4643","fromNode":"d3dfd19cf8349b51","fromSide":"bottom","toNode":"5db5512b8978e795","toSide":"top","label":"send state JSON"},
 		{"id":"b5eff11153a5c279","fromNode":"5db5512b8978e795","fromSide":"bottom","toNode":"5b8515be71a1b844","toSide":"top","label":"Notify Subscribers"},
 		{"id":"a7b8c5aefe5ec48a","fromNode":"5db5512b8978e795","fromSide":"bottom","toNode":"9a27b98d2946bda5","toSide":"top"},
-		{"id":"362c474913b6aac2","fromNode":"5db5512b8978e795","fromSide":"bottom","toNode":"f326a724fcc7e72a","toSide":"top"}
+		{"id":"362c474913b6aac2","fromNode":"5db5512b8978e795","fromSide":"bottom","toNode":"f326a724fcc7e72a","toSide":"top"},
+		{"id":"5f10db84ad506f5a","fromNode":"4775d08daeaf1e36","fromSide":"bottom","toNode":"0d4389d680d0f082","toSide":"top"},
+		{"id":"b03cb864567bff7d","fromNode":"f326a724fcc7e72a","fromSide":"bottom","toNode":"5e0ddd24954632e5","toSide":"left"}
 	]
 }
