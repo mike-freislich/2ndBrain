@@ -1,32 +1,8 @@
-```tasks
-status is wip
-```
-
-- [ ] this is a task 📅 
-
---- 
-# WIP
-```tasks
-not done
-```
-
-
-
---- 
-# To Do
 
 ```tasks
 not done
+group by status.name
 ```
-
-# Done
-```tasks
-done
-```
-
-
-
-
 
 # Testing
 
