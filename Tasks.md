@@ -6,7 +6,6 @@ group by status.type
 
 
 
-
 # Done
 ```tasks
 done
