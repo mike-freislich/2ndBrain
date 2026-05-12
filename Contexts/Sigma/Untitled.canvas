@@ -5,10 +5,10 @@
 		{"id":"f326a724fcc7e72a","type":"text","text":"Game State Store","x":-60,"y":100,"width":250,"height":60},
 		{"id":"9a27b98d2946bda5","type":"text","text":"Analytics","x":-320,"y":190,"width":250,"height":60},
 		{"id":"15cf988bc9ff8296","type":"text","text":"Makes action","x":-60,"y":-160,"width":250,"height":60,"color":"4"},
-		{"id":"bd6af9f5a83b1ad5","type":"file","file":"91_Attachments/unnamed.png","x":280,"y":-160,"width":502,"height":437},
+		{"id":"bd6af9f5a83b1ad5","type":"file","file":"Files/unnamed.png","x":280,"y":-160,"width":502,"height":437},
 		{"id":"1832a9d0b633a084","type":"text","text":"Let's find the why's and trace them...","x":657,"y":-190,"width":250,"height":60},
 		{"id":"d3dfd19cf8349b51","type":"text","text":"Godot","x":-320,"y":-340,"width":200,"height":50},
-		{"id":"5e0ddd24954632e5","type":"file","file":"01_Projects/Sigma/portfolio management.md","x":280,"y":420,"width":710,"height":740},
+		{"id":"5e0ddd24954632e5","type":"file","file":"Contexts/Sigma/portfolio management.md","x":280,"y":420,"width":710,"height":740},
 		{"id":"c783d4b9c2cd6549","type":"text","text":"","x":700,"y":-80,"width":250,"height":60},
 		{"id":"a2f3626752641b21","type":"text","text":"","x":700,"y":40,"width":250,"height":60}
 	],

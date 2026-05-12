@@ -17,9 +17,9 @@ require_confirmation:
 metadata:
   autoLabeled: true
 context_files:
-  - "[[tasks]]"
+  - "[[Tasks]]"
 accessed_files:
-  - "[[tasks]]"
+  - "[[Tasks]]"
 ---
 # Agent Session 2026-04-30
 
@@ -92,6 +92,6 @@ accessed_files:
 > | Time | 2026-04-30T12:11:10.367+02:00 |
 
 > [!assistant]+
-> I have created a new note called [[tasks]] in your inbox with a summary of all your checklist items.
+> I have created a new note called [[Tasks]] in your inbox with a summary of all your checklist items.
 
 --- 
