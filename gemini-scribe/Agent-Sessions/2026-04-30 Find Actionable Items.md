@@ -72,8 +72,8 @@ accessed_files:
 > 
 > - In [[00_Inbox/Daily/2026-04-30.md]]:
 >     - actions #todo
->         - [ ] do the thing 
->         - [ ] and the other thing
+>         - [ ] do the thing #todo
+>         - [ ] and the other thing #todo
 
 --- 
 ## Mike
