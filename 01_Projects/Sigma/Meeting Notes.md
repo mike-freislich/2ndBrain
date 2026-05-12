@@ -11,14 +11,13 @@ tags:
 * ## Play Test
 	* ### Key Needs (ME)
 		* ages 6-8 leaning to younger (late Gr.1 - early Gr.2)
-		* 8 June --> 6 weeks --> PT2
+		* 13 June --> 4-6 weeks --> PT2
 		* How long is a session?
 		* todo:
 			* HMW needs to see the activities ... e.g. pay attention to this section
 			* Structure
 			* Get 10 tablets
 			* Video recording on tablet
-			* 
 	* ### The HowMightWe
 		* Jack will by Point of Contact
 		* Mandy  - planning, logistics and contract
@@ -69,7 +68,6 @@ tags:
 					* Live stream (internet dependent)
 					* Possible to have an observer on site 
 					* Video Clips - documentation
-					* 
 				* 2 weeks recruit -> 2 days research -> 1 week 
 				* Start Research 15th (17th and 18th) June -- 26th June for the results
 				* 
