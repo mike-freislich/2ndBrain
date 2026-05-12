@@ -11,7 +11,7 @@ tags:
 
 ### Tasks
 - [x]  Here is a task @completed(2026-05-12T16:37:12+02:00)
-- [x] Activity ID  - possibly from business map? #nanisca ✅ 2026-05-12
+- [/] Activity ID  - possibly from business map? #nanisca
 - [x] wefwefwef wef wef  ewdqwdfwefwef @completed(2026-05-12T16:37:11+02:00)
 
 

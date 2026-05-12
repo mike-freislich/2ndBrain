@@ -1,9 +1,14 @@
 
 ```tasks
 not done
-group by status.name
+group by status.type
 ```
 
-# Testing
 
-- [ ] wefwefwefwef
+
+
+# Done
+```tasks
+done
+```
+
