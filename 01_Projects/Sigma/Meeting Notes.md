@@ -2,7 +2,18 @@
 tags:
   - meeting
   - sigma
+  - "#daily"
 ---
+
+# 2026-05-12
+
+
+* ## Play Test
+	* ages 6-8
+	* 
+
+
+
 # 2026-05-06
 - ### Cycle Review
 	- Define Needs for the ROM distribution process and determine solution based on that #todo 
