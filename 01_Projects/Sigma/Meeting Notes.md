@@ -70,7 +70,10 @@ tags:
 					* Video Clips - documentation
 				* 2 weeks recruit -> 2 days research -> 1 week 
 				* Start Research 15th (17th and 18th) June -- 26th June for the results
-				* 
+	* ### Next Steps
+		* Amanda - to send contract - confirm by end of this week
+		* Next session : Detail of recruit brief (with learning design)
+		* 
 
 
 
