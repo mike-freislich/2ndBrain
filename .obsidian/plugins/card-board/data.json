@@ -31,19 +31,7 @@
         "filters": [
           {
             "tag": "pathFilter",
-            "data": "01_Projects/Sigma"
-          },
-          {
-            "tag": "pathFilter",
-            "data": "/"
-          },
-          {
-            "tag": "pathFilter",
-            "data": "00_Inbox"
-          },
-          {
-            "tag": "pathFilter",
-            "data": "00_Inbox/Daily"
+            "data": "01_Projects/BusinessMap"
           },
           {
             "tag": "pathFilter",
@@ -51,7 +39,19 @@
           },
           {
             "tag": "pathFilter",
-            "data": "01_Projects/BusinessMap"
+            "data": "00_Inbox/Daily"
+          },
+          {
+            "tag": "pathFilter",
+            "data": "00_Inbox"
+          },
+          {
+            "tag": "pathFilter",
+            "data": "/"
+          },
+          {
+            "tag": "pathFilter",
+            "data": "01_Projects/Sigma"
           }
         ],
         "filterPolarity": "Allow",
