@@ -8,7 +8,7 @@
             "tag": "untagged",
             "data": {
               "collapsed": false,
-              "name": "Backlog"
+              "name": "Todo"
             }
           },
           {
@@ -28,7 +28,12 @@
             }
           }
         ],
-        "filters": [],
+        "filters": [
+          {
+            "tag": "pathFilter",
+            "data": "01_Projects/Sigma"
+          }
+        ],
         "filterPolarity": "Allow",
         "filterScope": "Both",
         "name": "TaskBoard",

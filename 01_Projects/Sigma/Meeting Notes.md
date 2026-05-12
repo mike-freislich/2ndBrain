@@ -7,8 +7,11 @@ tags:
 # 2026-05-12
 
 
-- ## Visual Design Review
-	- [ ]  Activity ID  - possibly from business map? 
+## Visual Design Review
+
+### Tasks
+- [ ]  Here is a task
+- [ ]  Activity ID  - possibly from business map? 
 
 * ## Play Test [[HowMightWe]] 
 	* ### Key Needs (ME)
@@ -76,6 +79,7 @@ tags:
 		* Amanda - to send contract - confirm by end of this week
 		* Next session : Detail of recruit brief (with learning design)
 		* 
+
 
 
 
