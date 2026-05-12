@@ -22,5 +22,6 @@ no tags
 
 
 - this is a thing
-	- [ ] this is the task 
-- [ ] testing this things 📅 2026-05-13 
+- [x] this is the task  @completed(2026-05-12T15:52:31+02:00)
+- [x] testing this things 📅 2026-05-13  @completed(2026-05-12T15:52:30+02:00)
+- [x] weifuweufwef @completed(2026-05-12T15:52:28+02:00)

@@ -32,6 +32,26 @@
           {
             "tag": "pathFilter",
             "data": "01_Projects/Sigma"
+          },
+          {
+            "tag": "pathFilter",
+            "data": "/"
+          },
+          {
+            "tag": "pathFilter",
+            "data": "00_Inbox"
+          },
+          {
+            "tag": "pathFilter",
+            "data": "00_Inbox/Daily"
+          },
+          {
+            "tag": "pathFilter",
+            "data": "01_Projects"
+          },
+          {
+            "tag": "pathFilter",
+            "data": "01_Projects/BusinessMap"
           }
         ],
         "filterPolarity": "Allow",

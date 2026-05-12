@@ -7,11 +7,13 @@ tags:
 # 2026-05-12
 
 
+
+--- 
 ## Visual Design Review
 
 ### Tasks
-- [ ]  Here is a task
-- [ ]  Activity ID  - possibly from business map? 
+- [x]  Here is a task @completed(2026-05-12T15:54:45+02:00)
+- [/]  Activity ID  - possibly from business map? 
 
 * ## Play Test [[HowMightWe]] 
 	* ### Key Needs (ME)
