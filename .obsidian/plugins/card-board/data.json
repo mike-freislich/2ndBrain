@@ -67,11 +67,16 @@
         "tomorrow": "",
         "future": "",
         "undated": "",
-        "otherTags": "",
+        "otherTags": "wip, doing",
         "untagged": "",
         "completed": ""
       },
-      "filters": [],
+      "filters": [
+        {
+          "tag": "pathFilter",
+          "data": "gemini-scribe/Agent-Sessions"
+        }
+      ],
       "firstDayOfWeek": "FromLocale",
       "ignoreFileNameDates": false,
       "taskCompletionFormat": "ObsidianCardBoard",

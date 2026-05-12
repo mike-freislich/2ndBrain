@@ -67,13 +67,6 @@ accessed_files:
 > | -------- | ----- |
 > | Time | 2026-04-30T11:50:06.052+02:00 |
 
-> [!assistant]+
-> Of course. I've found the following #todo items in your vault:
-> 
-> - In [[00_Inbox/Daily/2026-04-30.md]]:
->     - actions #todo
->         - [ ] do the thing #todo
->         - [ ] and the other thing #todo
 
 --- 
 ## Mike

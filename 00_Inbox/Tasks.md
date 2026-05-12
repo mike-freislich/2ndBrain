@@ -10,17 +10,18 @@ tags include doing
 
 ```tasks
 not done
-tags include todo
 ```
 
-# Backlog
+
+# Done
 ```tasks
-not done
-no tags
+done
 ```
 
 
 
+--- 
+# Testing things
 - this is a thing
 - [x] this is the task  @completed(2026-05-12T15:52:31+02:00)
 - [x] testing this things 📅 2026-05-13  @completed(2026-05-12T15:52:30+02:00)
