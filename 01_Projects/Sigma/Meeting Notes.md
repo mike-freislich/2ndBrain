@@ -9,8 +9,8 @@ tags:
 
 
 * ## Play Test
-	* ages 6-8
-	* 
+	* ages 6-8 leaning to younger (late Gr.1 - early Gr.2)
+	* 8 June --> 6 weeks --> 
 
 
 
