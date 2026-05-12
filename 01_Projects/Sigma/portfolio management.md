@@ -83,7 +83,7 @@ rollout to 4 million
 * ### M2
 	* + Identity 
 
-- [ ] #todo add questions to the Al Spec document --- and CC Nitin
+- [ ] add questions to the Al Spec document --- and CC Nitin
 - [ ] #todo review the heatmaps for needed activities in Pilot
 
 

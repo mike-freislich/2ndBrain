@@ -8,14 +8,14 @@
             "tag": "untagged",
             "data": {
               "collapsed": false,
-              "name": "Todo"
+              "name": "TODO"
             }
           },
           {
             "tag": "otherTags",
             "data": {
               "collapsed": false,
-              "name": "Doing"
+              "name": "WIP"
             }
           },
           {
@@ -24,7 +24,7 @@
               "collapsed": false,
               "index": 2,
               "limit": 10,
-              "name": "Completed"
+              "name": "DONE"
             }
           }
         ],
