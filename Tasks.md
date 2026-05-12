@@ -1,9 +1,9 @@
 ```tasks
-IS IN_PROGRESS
+status is wip
 ```
 
-- [ ] this is a task 📅 2026-05-13 wefwefwefw
-- [ ] 
+- [ ] this is a task 📅 
+
 --- 
 # WIP
 ```tasks
