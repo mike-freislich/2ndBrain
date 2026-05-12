@@ -9,8 +9,13 @@ tags:
 
 
 * ## Play Test
-	* ages 6-8 leaning to younger (late Gr.1 - early Gr.2)
-	* 8 June --> 6 weeks --> 
+	* Key Needs
+		* ages 6-8 leaning to younger (late Gr.1 - early Gr.2)
+		* 8 June --> 6 weeks --> 
+	* The HowMightWe
+		* Jack will by Point of Contact
+		* Mandy  - planning, logistics and contract
+			* Consent 
 
 
 
