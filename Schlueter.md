@@ -9,9 +9,9 @@
 
 ## Use Case Group Exercises
 1. Find Use Cases + Build Groups
-2. Understand Use Case + Identify FIT and Flow
+2. Understand Use Case + Identify Flight Item Types and Flow
 3. Model flows on a board
-4. 
+4. Refine board and Create Focus
 
 
 
