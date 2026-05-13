@@ -1,18 +1,14 @@
 ---
 tags:
   - "#daily"
+title: "{{date:YYYY-MM-DD}}"
 ---
 
-# {{date:YYYY-MM-DD}}
 
-
-## Work
+## Tasks
 ---
-- ...
+```tasks
+not done
+group by status.type
+```
 
-
-
-
-## Personal
---- 
-* ...

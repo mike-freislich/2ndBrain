@@ -84,7 +84,7 @@ rollout to 4 million
 	* + Identity 
 
 - [-] add questions to the Al Spec document --- and CC Nitin ❌ 2026-05-13
-- [/] review the heatmaps for needed activities in Pilot
+- [/] #nanisca review the heatmaps for needed activities in Pilot
 
 
 

@@ -1,4 +1,4 @@
 {
-  "folder": "00_Inbox/Daily",
-  "template": "90_Meta/Templates/Daily Note"
+  "folder": "Daily",
+  "template": "Templates/Daily Note"
 }
