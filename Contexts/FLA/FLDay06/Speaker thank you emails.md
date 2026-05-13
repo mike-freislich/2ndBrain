@@ -16,9 +16,10 @@ email hello@flightlevels.io
 From Mike, Klaus and Katrin
 
 --- 
-# email template
+# email template from Gemini
 
 Subject: A huge thank you (and a gift!) from Flight Levels Day 06 🚀
+
 Hi [Speaker Name],
 Now that the dust has settled on **Flight Levels Day 06**, I wanted to take a moment to personally thank you for your incredible contribution.
 The feedback we’ve received has been fantastic, and that is entirely due to the high quality of the sessions. Your talk on **"[Talk Title]"** was a standout—thank you for the time, energy, and expertise you poured into it. It’s speakers like you who make this community so vibrant and insightful.
