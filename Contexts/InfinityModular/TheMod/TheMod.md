@@ -2,6 +2,7 @@
 tags:
   - synth
   - digital
+  - themod
 ---
 ## Product Images
 
