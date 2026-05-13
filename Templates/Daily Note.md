@@ -13,7 +13,6 @@ title: "{{date:YYYY-MM-DD}}"
 ---
 ```tasks
 not done
-description is not empty
 group by status.name reverse
 sort by due date
 
