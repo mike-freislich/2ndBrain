@@ -3,20 +3,25 @@ tags:
   - "#daily"
 title: "{{date:YYYY-MM-DD}}"
 ---
+# Notes
+
+
+
 
 
 ## Tasks
 ---
 ```tasks
 not done
-group by status.type
+group by status.name reverse
 sort by due date
+
+short mode
 
 hide task count
 hide urgency
 hide edit button
 hide postpone button
 hide toolbar
-short mode
 ```
 
