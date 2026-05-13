@@ -1,7 +1,7 @@
 - [/] #fla #flday send out speaker thank-you's 📅 2026-05-13
 
 
-# requirements
+# Requirements
 
 Thanks for speaking! 
 
@@ -16,7 +16,7 @@ email hello@flightlevels.io
 From Mike, Klaus and Katrin
 
 --- 
-# email template from Gemini
+# Email template from Gemini
 
 Subject: A huge thank you (and a gift!) from Flight Levels Day 06 🚀
 
@@ -36,3 +36,17 @@ Thank you once again for making FLDay06 such a success. We truly value having yo
 Best regards,
 [Your Name]
 Event Coordinator, Flight Levels Day 06
+
+---
+# Speaker Emails & Talks
+- [[Mathias Tölken]] - From Excel Chaos to Flow: Two Years of Scaling Flight Level 2 at BASF with Businessmap
+- [[Russell Hill]] - Flight Levels® for Small Companies: Unlock your small company’s potential
+- [[Peter Faulks]] - Take-off without permission: Towards organisational agility with Flight Levels
+- [[Thomas Krause]] - The Year We Almost Missed — A Flight Levels Story from 2027
+- [[Cameron Leask]] - One Golden Thread – From Boardroom to Building Site across multiple organisations
+- [[Christoph Dibbern]] - Foster Business Agility with Flight Levels and accelerate with teams of agents as well as Flight Level 2 systems based on technologies like n8n
+- [[Victor Fairén]] - From optimizing a team to redesigning how an entire organization flows
+- [[Andreas Rein]] and [[Philipp Pichler]] - Flight Levels 2 and Leadership: Why Structure Only Works When Mindset Evolves
+- [[Troy Magennis]] - Dependency Management in Flight Levels Systems – Now with Added AI
+- [[Dave Steege]] - From Take-Off to Impact: Measuring What Really Matters
+- [[Craeg Strong]] - Improving System Delivery at the nation’s largest public Housing Authority with Flight Levels
