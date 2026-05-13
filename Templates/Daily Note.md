@@ -12,6 +12,7 @@ title: "{{date:YYYY-MM-DD}}"
 ## Tasks
 ---
 ```tasks
+description regex matches /\S/
 not done
 group by status.name reverse
 sort by due date
