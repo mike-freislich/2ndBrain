@@ -1,4 +1,22 @@
-- [/] #fla send out speaker thank-you's 📅 2026-05-13
+- [/] #fla #flday send out speaker thank-you's 📅 2026-05-13
+
+
+# requirements
+
+Thanks for speaking! 
+
+FLxx_SP
+or
+Troy x 2
+or
+FLINs x 10
+
+email hello@flightlevels.io
+
+From Mike, Klaus and Katrin
+
+--- 
+# email template
 
 Subject: A huge thank you (and a gift!) from Flight Levels Day 06 🚀
 Hi [Speaker Name],
