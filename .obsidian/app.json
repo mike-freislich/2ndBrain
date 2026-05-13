@@ -2,6 +2,6 @@
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "newFileLocation": "folder",
-  "newFileFolderPath": "/Unfiled",
+  "newFileFolderPath": "Unfiled",
   "attachmentFolderPath": "Files"
 }
