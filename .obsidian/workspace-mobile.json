@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Contexts/FLA/FLDay06/Speaker thank you emails.md",
+                "file": "Daily/2026-05-13.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Speaker thank you emails"
+              "title": "2026-05-13"
             }
           }
         ]
@@ -181,8 +181,8 @@
   },
   "active": "1d37d01204578409",
   "lastOpenFiles": [
-    "Schlueter.md",
     "Contexts/FLA/FLDay06/Speaker thank you emails.md",
+    "Schlueter.md",
     "Tasks.md",
     "/Daily/2026-05-12.md",
     "/Contexts/Sigma/Meeting Notes.md",
