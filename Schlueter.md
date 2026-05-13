@@ -1,4 +1,7 @@
 
+# Tasks
+- [/] #levelup create 3 day #fl2d plan for [[Schlueter]] 📅 2026-05-13
+
 # FL2D Workshop Design
 
 ## Timing
