@@ -83,8 +83,8 @@ rollout to 4 million
 * ### M2
 	* + Identity 
 
-- [ ] add questions to the Al Spec document --- and CC Nitin
-- [ ] review the heatmaps for needed activities in Pilot
+- [-] add questions to the Al Spec document --- and CC Nitin ❌ 2026-05-13
+- [/] review the heatmaps for needed activities in Pilot
 
 
 
