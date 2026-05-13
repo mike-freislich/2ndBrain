@@ -1,18 +1,18 @@
 [
   {
-    "icon": "book-open",
-    "text": "What are the key points in the FLDay06 note for the FLA project?"
+    "icon": "lightbulb",
+    "text": "Summarize the design concepts for TheMod and suggest how they could integrate with the MegaRack project"
   },
   {
-    "icon": "file-plus",
-    "text": "Create a new note in the LevelUp project folder outlining initial project goals."
+    "icon": "sparkles",
+    "text": "Draft a follow-up email for Albena Georgieva regarding the BusinessMap QoL enhancements"
   },
   {
-    "icon": "link",
-    "text": "Are there any connections between the portfolio management note and my daily note from today?"
+    "icon": "calendar",
+    "text": "List all upcoming speaker deadlines and calendar invite tasks from the FLDay06 folder"
   },
   {
-    "icon": "folder-tree",
-    "text": "Create a summary of all my project folders and their current status."
+    "icon": "globe",
+    "text": "Research current market competitors for modular hardware to inform the InfinityModular strategy"
   }
 ]

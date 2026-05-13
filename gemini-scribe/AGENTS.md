@@ -4,38 +4,36 @@ This file provides context about this Obsidian vault for AI agents.
 
 ## Vault Overview
 
-This vault is a personal knowledge management system designed for project and task management. It utilizes a structured folder system to separate incoming information, active projects, and metadata like templates.
+This vault is a professional project management and knowledge repository focused on event facilitation, business operations, and product development. It serves as a structured workspace for managing diverse workstreams, including event scripting for FLA, portfolio management for Sigma, and modular system design for InfinityModular.
 
 ## Organization
 
-The vault is organized using a numeric prefix system to order top-level folders, suggesting a workflow-based approach. The primary organizational pillars are:
+The vault has recently transitioned to a context-based organisational structure, moving away from numeric prefixes to descriptive top-level categories:
 
-- **`00_Inbox`**: A starting point for new information, containing a `Daily` folder for time-based notes in `YYYY-MM-DD` format.
-- **`01_Projects`**: The core of the vault, where each subfolder represents a distinct project (e.g., `Sigma`, `LevelUp`, `FLA`). Notes related to a specific project are housed within its folder.
-- **`90_Meta`**: Contains supporting materials for the vault itself, most notably a `Templates` folder which houses templates for recurring note types like the `Daily Note`.
-- **`91_Attachments`**: A standard repository for non-markdown files like images or documents.
+- **`Contexts/`**: The primary workspace. Each subfolder represents a specific project or business area (e.g., `FLA`, `Sigma`, `InfinityModular`). Notes are often nested further to separate specific outputs like scripts, meeting notes, and ideas (e.g., `Contexts/FLA/FLDay06/`).
+- **`Daily/`**: A chronological journal folder containing notes named `YYYY-MM-DD`. This serves as the primary entry point for daily logging and journaling.
+- **`Templates/`**: Contains standardised note formats, such as the `Daily Note` template, to ensure consistency across the vault.
+- **`Files/`**: A dedicated repository for non-markdown attachments and assets.
 
-This structure suggests a system for capturing daily activities and funneling relevant information into specific, well-defined project containers.
+Information is connected through a deep folder hierarchy that groups task-specific documents (like speaker emails and scripts) directly under their relevant project phase.
 
 ## Key Topics
 
-- Project Management
-- Portfolio Management
-- Project: Sigma
-- Project: LevelUp
-- Project: InfinityModular
-- Project: FLA
-- Daily Logging & Journaling
+- **Event Facilitation & Scripting**: Detailed planning for `FLA` (specifically `FLDay06`), including StreamYard scripts, facilitation notes, and speaker coordination.
+- **Modular Product Design**: Conceptual development and documentation for `InfinityModular`, focusing on `MegaRack` and `TheMod`.
+- **Business Operations & QoL**: Quality of Life (QoL) enhancements and stakeholder management within `BusinessMap`.
+- **Portfolio Management**: Strategic oversight and meeting records within the `Sigma` project.
+- **Stakeholder Management**: Tracking interactions and details for specific individuals like Albena Georgieva and Schlueter within their respective project contexts.
 
 ## User Preferences
 
-The user clearly prefers a highly structured and organized approach to note-taking. The use of numbered folders, project-specific directories, and a dedicated templates folder indicates a desire for consistency and systematic information management.
+Mike prefers a highly structured and siloed approach to information management. Notes are strictly categorised by 'Context' rather than general tags. 
 
-Responses and actions should respect this structure. For example, creating new notes should follow the established conventions, placing them in the correct folders (e.g., `00_Inbox` for new thoughts, `01_Projects/[Project Name]/` for project-specific content). File naming conventions appear to vary by context: `YYYY-MM-DD` for daily notes, and descriptive lowercase names for topic-based notes (e.g., `portfolio management`).
+The writing style is action-oriented and functional, with many notes serving as practical tools like email templates, talk scripts, and meeting logs. Naming conventions are consistent: `YYYY-MM-DD` for daily entries and descriptive, lowercase titles for project-specific notes (e.g., `portfolio management`).
 
 ## Custom Instructions
 
-- When creating a daily note, use the template located at `90_Meta/Templates/Daily Note` and place the new file in `00_Inbox/Daily/` with the format `YYYY-MM-DD`.
-- Uncategorized or new temporary notes should be placed in `00_Inbox` for later processing.
-- Notes related to a specific project should be created directly within the corresponding folder inside `01_Projects`.
-- Follow existing file naming conventions: use descriptive lowercase titles for project notes (e.g., `new project note`).
+- When creating project-related notes, place them in the appropriate subfolder within `Contexts/` (e.g., `Contexts/Sigma/` or `Contexts/InfinityModular/`).
+- New daily notes must be created in `Daily/` using the `YYYY-MM-DD` format and the template located at `Templates/Daily Note`.
+- Maintain the existing hierarchy for complex projects; for example, sub-projects like `MegaRack` should remain in their specific subfolders within `Contexts/InfinityModular/`.
+- Follow the established naming convention of using descriptive lowercase titles for new topical notes.
