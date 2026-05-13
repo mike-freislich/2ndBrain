@@ -1,7 +1,7 @@
 
 ```tasks
 not done
-group by status.type
+group by status.name
 sort by due date
 
 hide task count
@@ -11,6 +11,7 @@ hide postpone button
 hide toolbar
 short mode
 ```
+
 
 
 # Done

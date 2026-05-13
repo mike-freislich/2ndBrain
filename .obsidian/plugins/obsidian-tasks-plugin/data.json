@@ -32,14 +32,14 @@
     "coreStatuses": [
       {
         "symbol": " ",
-        "name": "todo",
+        "name": "TODO",
         "nextStatusSymbol": "/",
         "availableAsCommand": true,
         "type": "TODO"
       },
       {
         "symbol": "x",
-        "name": "done",
+        "name": "DONE",
         "nextStatusSymbol": " ",
         "availableAsCommand": true,
         "type": "DONE"
@@ -48,7 +48,7 @@
     "customStatuses": [
       {
         "symbol": "/",
-        "name": "wip",
+        "name": "WIP",
         "nextStatusSymbol": "x",
         "availableAsCommand": true,
         "type": "IN_PROGRESS"
