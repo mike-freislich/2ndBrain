@@ -1,5 +1,21 @@
 
-# FL2D Workshop Desin
+# FL2D Workshop Design
+
+## Timing
+> Dates: 15-17 June 2026
+> Times: 1pm (7am NYC) - 7pm (11am NYC)
+> 
+> Class Teaching from 1-6 ... intersession from 6-7
+
+## Use Case Group Exercises
+1. Find Use Cases + Build Groups
+2. Understand Use Case + Identify FIT and Flow
+3. Model flows on a board
+4. 
+
+
+
+
 
 
 
