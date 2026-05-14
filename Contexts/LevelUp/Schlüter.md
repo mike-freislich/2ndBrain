@@ -1,6 +1,7 @@
 
 # Tasks
-- [/] #levelup create 3 day #fl2d plan for [[Schlueter]] 📅 2026-05-13
+- [x] #levelup create 3 day #fl2d plan for [[Schlüter]] 📅 2026-05-13 ✅ 2026-05-14
+- [ ] #levelup review day 3 of #fl2d plan for [[Schlüter]] 📅 2026-05-15 
 
 # FL2D Workshop Design
 
