@@ -1,4 +1,4 @@
-- [/] #fla #flday send out speaker thank-you's 📅 2026-05-13
+- [x] #fla #flday send out speaker thank-you's 📅 2026-05-13 ✅ 2026-05-14
 
 
 # Requirements
