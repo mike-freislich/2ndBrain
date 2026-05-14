@@ -25,8 +25,8 @@ tags:
 	- ### Components
 		- [USB Type-C Specification Release 1.3.pdf](../assets/USB_Type-C_Specification_Release_1.3_1748160626366_0.pdf)
 - ## Project Files
-	- [IM-TheMod - Firmware](file:///Users/mikef/Documents/github/Eurorack/IM-TheMod/Firmware/TheMod_Firmware.code-workspace) #vscode
-	- [IM-TheMod - Hardware](file:///Users/mikef/Documents/github/Eurorack/IM-TheMod/Hardware/TheMod-HW.kicad_pro) #[[kicad]]
+	- [IM-TheMod - Firmware](file:///Users/mikef/Documents/github/InfinityModular/IM-TheMod/Firmware/TheMod_Firmware.code-workspace) #vscode
+	- [IM-TheMod - Hardware](file:///Users/mikef/Documents/github/InfinityModular/IM-TheMod/Hardware/TheMod-HW.kicad_pro) #[[kicad]]
 	- [Project Folder](file:///Users/mikef/Documents/github/Eurorack/IM-TheMod) #[[files]]
 	-
 - ## Bill of Materials
