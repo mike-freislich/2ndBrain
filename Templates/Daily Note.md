@@ -23,6 +23,6 @@ hide task count
 hide urgency
 hide edit button
 hide postpone button
-hide toolbar
+# hide toolbar
 ```
 
