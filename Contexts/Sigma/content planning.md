@@ -17,6 +17,7 @@ project:
 -  [Narrative Map](https://miro.com/app/board/uXjVGgjW1uk=/) review
 
 ## Notes
+- Context-based locations
 - 
 
 ## Action Items
