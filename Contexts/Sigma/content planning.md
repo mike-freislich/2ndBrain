@@ -21,4 +21,4 @@ project:
 - 
 
 ## Action Items
-- [ ] 
+- [ ] #nanisca #content-team need to figure out a minimum set of narrative locations
