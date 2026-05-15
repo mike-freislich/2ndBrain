@@ -14,8 +14,7 @@ project:
 **Project**: #nanisca 
 
 ## Agenda
-- Narrative Map Review
--  
+-  [Narrative Map](https://miro.com/app/board/uXjVGgjW1uk=/) review
 
 ## Notes
 - 
