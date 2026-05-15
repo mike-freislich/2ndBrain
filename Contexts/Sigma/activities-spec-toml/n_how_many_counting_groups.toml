@@ -1,0 +1,321 @@
+# Nanisca activity manifest (TOML form).
+# Identifier: n_how_many_counting_groups
+#
+# Convention: `audio` and `sceneDirection` values are KEYS into the [strings] table,
+# not literal text. The JSON manifest remains the source of truth.
+
+specVersion = "1.1-DRAFT"
+locale      = "en-ZA"
+instructionalHints = ["Ih_drag_drop"]
+
+[meta]
+identifier = "n_how_many_counting_groups"
+title = "How many counting groups"
+subject = "Numeracy"
+subconstructs = ["N1.1", "N1.2"]
+skillsMapping = ["N1.1.1-F", "N1.2.1-G1"]
+activityFamily = "Interactive - Drag"
+activityType = "Drag and drop into a box (individual)"
+description = "Counting 1–10 items into an object according to audio instructions. Very early level game, kept simple (e.g. no done button)."
+
+[meta.suggestedGlobalParams]
+numberOfRounds = 4
+showDemo = true
+showOutro = true
+
+# ─── Novel Parameters ─────────────────────────────────────────────
+
+[novelParams.totalItemsOnScreen]
+type = "integerRange"
+logic = "Equal to (target category items + 1) at minimum."
+
+[novelParams.totalItemsOnScreen.levels]
+L1 = { min = 3, max = 10 }
+L2 = { min = 4, max = 20 }
+L3 = { min = 5, max = 20 }
+
+[novelParams.numberOfItemCategories]
+type = "integer"
+logic = "Items from the target category must never have the same count as any other category on screen."
+
+[novelParams.numberOfItemCategories.levels]
+L1 = 2
+L2 = 3
+L3 = 4
+
+[novelParams.categoryItemMax]
+type = "integer"
+logic = "Maximum count for any single category on screen."
+
+[novelParams.categoryItemMax.levels]
+L1 = 10
+L2 = 10
+L3 = 10
+
+[novelParams.itemSizes]
+type = "string"
+enum = ["consistent", "varied"]
+
+[novelParams.itemSizes.levels]
+L1 = "consistent"
+L2 = "varied"
+L3 = "varied"
+
+[novelParams.feedbackTiming]
+type = "string"
+enum = ["instant", "delayed"]
+
+[novelParams.feedbackTiming.levels]
+L1 = "instant"
+L2 = "instant"
+L3 = "instant"
+
+# ─── Action Sequence ──────────────────────────────────────────────
+
+[[actionSequence.core]]
+phase    = "intro"
+step     = 1
+required = false
+actions  = ["character_enters"]
+audio    = "intro_prompt"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 1
+required = false
+actions  = ["empty_container_appears", "target_number_above_container", "items_scattered_to_side", "teacher_enters"]
+audio    = "demo_pick_right_items"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 2
+required = false
+actions  = ["target_number_emphasised"]
+audio    = "demo_we_need_n_items"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 3
+required = false
+actions  = ["pointer_picks_item", "pointer_drags_to_container"]
+audio    = "demo_drag_instruction"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 4
+required = false
+actions  = ["item_drops_into_container", "container_fill_animation"]
+sfx      = "scenario_drop_sfx"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 5
+required = false
+condition = "target_reached"
+actions  = ["target_reached_indicator"]
+audio    = "demo_confirm_then_your_turn"
+
+[[actionSequence.core]]
+phase    = "main"
+step     = 1
+required = true
+repeat   = "numberOfRounds"
+actions  = ["container_resets", "new_items_appear", "new_target_number_displayed"]
+audio    = "main_we_need_n_items"
+
+[[actionSequence.core]]
+phase    = "main"
+step     = 2
+required = true
+actions  = ["learner_drags_items_to_container", "drop_animation_per_item"]
+sfx      = "scenario_drop_sfx"
+
+[[actionSequence.core]]
+phase    = "main"
+step     = 3
+required = true
+condition = "target_reached"
+actions  = ["target_reached_indicator"]
+audio    = "main_confirm_count"
+
+[[actionSequence.core]]
+phase    = "main"
+step     = 4
+required = false
+condition = "all_items_used"
+actions  = ["container_top_view", "full_container_reveal"]
+audio    = "main_all_done"
+
+[[actionSequence.core]]
+phase    = "outro"
+step     = 1
+required = false
+actions  = ["random_outro_sequence"]
+sfx      = "fanfare"
+
+[[actionSequence.contextualised]]
+settingKey = "soup_pot"
+
+[[actionSequence.contextualised.steps]]
+phase    = "intro"
+step     = 1
+required = false
+sceneDirection = "cx_intro_scene_1"
+audio    = ["cx_intro_oops", "cx_intro_not_worried"]
+
+[[actionSequence.contextualised.steps]]
+phase    = "intro"
+step     = 2
+required = false
+sceneDirection = "cx_intro_scene_2"
+audio    = "cx_intro_help_make_dinner"
+
+[[actionSequence.contextualised.steps]]
+phase    = "demo"
+step     = 4
+required = false
+actions  = ["splash_animation", "steam_appears", "steam_fades"]
+sfx      = "splash"
+
+# ─── Strings ──────────────────────────────────────────────────────
+# All localisable text. Placeholders use {name} syntax resolved at runtime.
+
+[strings]
+intro_prompt                = "Can you help {object_character} count?"
+demo_pick_right_items       = "We must pick the right items."
+demo_we_need_n_items        = "We need {num_items} {items}."
+demo_drag_instruction       = "Drag the {items} into the {object}, like this."
+demo_confirm_then_your_turn = "{num_items} {items}. Now it's your turn."
+main_we_need_n_items        = "We need {num_items} {items}."
+main_confirm_count          = "{num_items} {items}."
+main_all_done               = "It is all done. Good job!"
+cx_intro_scene_1            = "Scene: An empty kitchen indicating dinner is coming up. {object_character} appears looking surprised, then poses with hands on hips, supremely confident."
+cx_intro_oops               = "{object_character} forgot! Mom is working tonight! (Oops!)"
+cx_intro_not_worried        = "{object_character} isn't worried."
+cx_intro_scene_2            = "{object_character} pulls on a chef hat and picks up a cooking tool, ready to go."
+cx_intro_help_make_dinner   = "{object_character} is going to make dinner for when Mom gets home! Can you help?"
+
+# ─── Characters ───────────────────────────────────────────────────
+
+[characters.object_character]
+name        = "Helper"
+role        = "protagonist"
+description = "Generic helper character — replace with named character per setting"
+
+# ─── Content ──────────────────────────────────────────────────────
+
+[content]
+defaultOption = "soup_pot"
+
+[[content.options]]
+key     = "soup_pot"
+label   = "Cooking vegetables in a soup pot"
+objects = ["pot", "steam"]
+scenarioSfx = ["splash", "sizzle"]
+notes   = "When an item is dropped: splash SFX, pot fills with liquid, steam appears briefly."
+items   = [
+  { key = "onion", label = "onion" },
+  { key = "garlic", label = "garlic" },
+  { key = "carrot", label = "carrot" },
+  { key = "egg", label = "egg" },
+  { key = "casava_root", label = "cassava root" },
+  { key = "beans", label = "beans" },
+  { key = "kale", label = "kale" },
+  { key = "cabbage", label = "cabbage" },
+  { key = "okra", label = "okra" },
+  { key = "tomato", label = "tomato" },
+  { key = "fish", label = "fish" },
+  { key = "corn", label = "corn" },
+  { key = "potato", label = "potato" },
+  { key = "chicken", label = "chicken" },
+  { key = "meat", label = "meat" },
+]
+
+[[content.options]]
+key     = "insects_nest"
+label   = "Worms / insects to chicks in a nest"
+objects = ["nest"]
+scenarioSfx = ["chirping"]
+notes   = "Add chirping SFX; chicks open and close beaks when each item is dropped."
+items   = [
+  { key = "worm", label = "worm" },
+  { key = "spider", label = "spider" },
+  { key = "caterpillar", label = "caterpillar" },
+  { key = "grasshopper", label = "grasshopper" },
+  { key = "ant", label = "ant" },
+  { key = "ladybug", label = "ladybug" },
+  { key = "beetle", label = "beetle" },
+  { key = "moth", label = "moth" },
+  { key = "fly", label = "fly" },
+  { key = "bee", label = "bee" },
+  { key = "praying_mantis", label = "praying mantis" },
+  { key = "mosquito", label = "mosquito" },
+]
+
+[[content.options]]
+key     = "toy_box"
+label   = "Packing toys into a box"
+objects = ["toy_box"]
+items   = [
+  { key = "teddy_bear", label = "teddy bear" },
+  { key = "robot", label = "robot" },
+  { key = "soccer_ball", label = "soccer ball" },
+  { key = "block", label = "block" },
+  { key = "doll", label = "doll" },
+  { key = "kite", label = "kite" },
+  { key = "stacking_tower", label = "stacking tower" },
+  { key = "drum", label = "drum" },
+  { key = "tambourine", label = "tambourine" },
+  { key = "shaker", label = "shaker" },
+  { key = "toy_truck", label = "toy truck" },
+  { key = "wire_car", label = "wire car" },
+]
+
+[[content.options]]
+key     = "laundry_basket"
+label   = "Packing laundry into a basket"
+objects = ["basket"]
+items   = [
+  { key = "sock", label = "sock" },
+  { key = "shirt", label = "shirt" },
+  { key = "cap", label = "cap" },
+  { key = "shorts", label = "shorts" },
+  { key = "pants", label = "pants" },
+  { key = "beanie", label = "beanie" },
+  { key = "swimsuit", label = "swimsuit" },
+  { key = "vest", label = "vest" },
+  { key = "doek", label = "doek" },
+  { key = "jacket", label = "jacket" },
+  { key = "dress", label = "dress" },
+]
+
+[[content.options]]
+key     = "shells_bucket"
+label   = "Shells into a bucket"
+objects = ["bucket"]
+items   = [
+  { key = "rock", label = "rock" },
+  { key = "starfish", label = "starfish" },
+  { key = "seashell", label = "seashell" },
+  { key = "stick", label = "stick" },
+  { key = "seaweed", label = "seaweed" },
+  { key = "crab", label = "crab" },
+]
+
+# ─── SFX ──────────────────────────────────────────────────────────
+
+[sfx.splash]
+label    = "Splash"
+category = "interaction"
+
+[sfx.sizzle]
+label    = "Sizzle"
+category = "interaction"
+
+[sfx.chirping]
+label    = "Chicks chirping"
+category = "ambient"
+
+[sfx.fanfare]
+label    = "Fanfare"
+category = "celebration"

@@ -1,0 +1,356 @@
+# Nanisca activity manifest (TOML form).
+# Identifier: n_select_shelf
+#
+# Convention: `audio` and `sceneDirection` values are KEYS into the [strings] table,
+# not literal text. The JSON manifest remains the source of truth.
+
+specVersion = "1.1-DRAFT"
+locale      = "en-ZA"
+instructionalHints = ["nh_counting_items_target", "nh_counting_items", "nh_item_target", "nh_tap_for_number"]
+
+[meta]
+identifier = "n_select_shelf"
+title = "Select Shelf with X Items"
+subject = "Numeracy"
+subconstructs = ["N1.1", "N1.2"]
+skillsMapping = ["N1.1.1-F", "N1.2.1-F"]
+activityFamily = "Interactive - Tap"
+activityType = "Tap to select answer with audio clue"
+layoutTemplate = "layout_1"
+description = "Choose the correct number of items to match an audio clue"
+senAffordances = ["Consider the colour contrast and how visible items will be for those with colour blindness or other sight impairments"]
+
+[meta.suggestedGlobalParams]
+numberOfRounds = 5
+
+# ─── Novel Parameters ─────────────────────────────────────────────
+
+[novelParams.numberOfItemsPerShelf]
+type = "integerRange"
+logic = "No shelves must have the same number of items."
+
+[novelParams.numberOfItemsPerShelf.levels]
+L1 = { min = 1, max = 5 }
+L2 = { min = 1, max = 5 }
+L3 = { min = 1, max = 10 }
+L4 = { min = 1, max = 10 }
+
+[novelParams.numberOfShelves]
+type = "integer"
+
+[novelParams.numberOfShelves.levels]
+L1 = 2
+L2 = 3
+L3 = 3
+L4 = 3
+
+[novelParams.itemHomogeneity]
+type = "string"
+enum = ["same", "mixed"]
+
+[novelParams.itemHomogeneity.levels]
+L1 = "same"
+L2 = "same"
+L3 = "same"
+L4 = "mixed"
+
+[novelParams.feedbackTiming]
+type = "string"
+enum = ["instant", "delayed"]
+logic = "If shelf clicked is incorrect, shelf outlines in red with incorrect effect and SFX with audio."
+
+[novelParams.feedbackTiming.levels]
+L1 = "instant"
+L2 = "instant"
+L3 = "delayed"
+L4 = "delayed"
+
+# ─── Action Sequence ──────────────────────────────────────────────
+
+[[actionSequence.core]]
+phase    = "intro"
+step     = 1
+required = false
+actions  = ["character_enters"]
+audio    = "intro_prompt"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 1
+required = false
+actions  = ["shelves_appear", "items_randomised", "target_number_displayed"]
+audio    = "demo_tap_instruction"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 2
+required = false
+actions  = ["pointer_counts_shelf_1", "pointer_counts_shelf_2", "pointer_clicks_correct"]
+audio    = ["demo_count_shelf_1", "demo_count_shelf_2", "demo_click_instruction"]
+sfx      = "pop_appear"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 3
+required = false
+actions  = ["colour_block_appears", "number_appears_right"]
+audio    = "demo_confirm_count"
+
+[[actionSequence.core]]
+phase    = "main"
+step     = 1
+required = true
+repeat   = "numberOfRounds"
+actions  = ["shelves_appear_randomised", "audio_target_prompt"]
+audio    = "main_choose_shelf"
+sfx      = "pop_appear"
+
+[[actionSequence.core]]
+phase    = "main"
+step     = 2
+required = true
+condition = "correct_selection"
+actions  = ["colour_block_appears", "number_confirmed"]
+audio    = "main_confirm_count"
+sfx      = "swoosh"
+
+[[actionSequence.core]]
+phase    = "main"
+step     = 3
+required = true
+variant  = "three_shelves"
+condition = "level >= L2"
+actions  = ["three_shelf_layout"]
+
+[[actionSequence.core]]
+phase    = "main"
+step     = 4
+required = true
+variant  = "mixed_items_with_check"
+condition = "level >= L3"
+actions  = ["mixed_items_layout", "check_button_displayed"]
+audio    = "main_mixed_check_instruction"
+
+[[actionSequence.core]]
+phase    = "main"
+step     = 5
+required = true
+variant  = "incorrect_feedback"
+condition = "incorrect_selection"
+actions  = ["shelf_outlines_red", "incorrect_effect"]
+audio    = "feedback_incorrect"
+sfx      = "troubleshoot_fail"
+
+[[actionSequence.core]]
+phase    = "outro"
+step     = 1
+required = false
+actions  = ["character_appears"]
+audio    = "outro_celebration"
+sfx      = "fanfare"
+
+[[actionSequence.contextualised]]
+settingKey = "spaza_shop"
+
+[[actionSequence.contextualised.steps]]
+phase    = "intro"
+step     = 1
+required = false
+sceneDirection = "cx_intro_scene_1"
+audio    = ["cx_intro_narrator_1", "cx_intro_character_1"]
+sfx      = "ambient_town_music"
+
+[[actionSequence.contextualised.steps]]
+phase    = "intro"
+step     = 2
+required = false
+sceneDirection = "cx_intro_scene_2"
+audio    = ["cx_intro_ready", "cx_intro_customer_needs"]
+
+[[actionSequence.contextualised.steps]]
+phase    = "intro"
+step     = 3
+required = false
+sceneDirection = "cx_intro_scene_3"
+audio    = "cx_intro_help_prompt"
+
+[[actionSequence.contextualised.steps]]
+phase    = "demo"
+step     = 4
+required = false
+sceneDirection = "cx_demo_customer_thanks"
+audio    = "cx_thank_customer"
+
+[[actionSequence.contextualised.steps]]
+phase    = "demo"
+step     = 5
+required = false
+sceneDirection = "cx_demo_next_customer"
+audio    = "cx_next_customer_needs"
+
+[[actionSequence.contextualised.steps]]
+phase    = "main"
+step     = 3
+required = true
+condition = "correct_selection"
+sceneDirection = "cx_main_customer_thanks"
+audio    = "cx_thank_customer"
+
+# ─── Strings ──────────────────────────────────────────────────────
+# All localisable text. Placeholders use {name} syntax resolved at runtime.
+
+[strings]
+intro_prompt                 = "Can you help {object_character} choose the {object} with the correct amount of items?"
+demo_tap_instruction         = "Tap the {object} with {num_items} {items}."
+demo_count_shelf_1           = "{num_items_shelf_1}"
+demo_count_shelf_2           = "{num_items_shelf_2}"
+demo_click_instruction       = "Click on the {object} with {num_items} {items}."
+demo_confirm_count           = "There are {num_items} {items}."
+main_choose_shelf            = "Choose the {object} with {num_items} {items}."
+main_confirm_count           = "There are {num_items} {items}."
+main_mixed_check_instruction = "Choose the {object} with {num_items} items. When you're done, tap the check mark to check your work."
+feedback_incorrect           = "That's not right, try again!"
+outro_celebration            = "Good job!"
+cx_intro_scene_1             = "Scene: Street scene with Spaza shop clearly in the background. {object_character_uncle_jaba} is already on the screen standing in front of the spaza shop. Ambient sound of a town with African music tinkle plays in background. {object_character_phalo} walks on. {object_character_phalo} smiles and gives a thumbs up."
+cx_intro_narrator_1          = "{object_character_uncle_jaba} needs help at the spaza shop today. He asks {object_character_phalo} if he can help serve customers."
+cx_intro_character_1         = "I can help!"
+cx_intro_scene_2             = "Scene: Spaza shop counter. {object_character_phalo} walks up to counter. {object_character_woman_1} walks up to counter. Speech bubble with text appears. {object_character_phalo} gives thumbs up and turns and walks out of frame."
+cx_intro_ready               = "I'm ready to help!"
+cx_intro_customer_needs      = "This customer needs {num_items} {items}."
+cx_intro_scene_3             = "{object_character_phalo} walks onto frame and stops and looks out to user."
+cx_intro_help_prompt         = "Can you help {object_character_phalo} select the shelf with the right amount of items?"
+cx_demo_customer_thanks      = "Scene: Spaza shop counter. Items appear on counter with {object_character_phalo} standing behind the counter. {object_character_woman_1} speech bubble with text appears. Scene fades."
+cx_thank_customer            = "Thank you for helping the customer!"
+cx_demo_next_customer        = "Scene: Spaza shop counter. {object_character_phalo} is at the counter. {object_character_man_1} walks up to counter. Speech bubble with text appears."
+cx_next_customer_needs       = "This customer needs {num_items} {items}."
+cx_main_customer_thanks      = "Scene: Spaza shop counter. Items appear on counter with {object_character_phalo} standing behind the counter. {object_character_man_1} speech bubble with text appears. Scene fades."
+
+# ─── Characters ───────────────────────────────────────────────────
+
+[characters.object_character_phalo]
+name        = "Phalo"
+role        = "protagonist"
+description = "Young boy who helps at the spaza shop"
+
+[characters.object_character_uncle_jaba]
+name        = "Uncle Jaba"
+role        = "supporting"
+description = "Spaza shop owner"
+
+[characters.object_character_woman_1]
+name        = "Woman 1"
+role        = "customer"
+description = "First customer at the spaza shop"
+
+[characters.object_character_man_1]
+name        = "Man 1"
+role        = "customer"
+description = "Second customer at the spaza shop"
+
+# ─── Content ──────────────────────────────────────────────────────
+
+[content]
+defaultOption = "spaza_shop"
+
+[[content.options]]
+key     = "spaza_shop"
+label   = "Spaza shop with kitchen items on shelves"
+objects = ["shelf"]
+ambient = "ambient_town_music"
+items   = [
+  { key = "bars_of_soap", label = "bars of soap" },
+  { key = "soda_bottles", label = "soda bottles" },
+  { key = "chip_packets", label = "chip packets" },
+  { key = "chocolates", label = "chocolates" },
+  { key = "boxes_of_milk", label = "boxes of milk" },
+  { key = "tuna_cans", label = "tuna cans" },
+  { key = "bottles_of_oil", label = "bottles of oil" },
+  { key = "bags_of_sugar", label = "bags of sugar" },
+  { key = "bags_of_flour", label = "bags of flour" },
+  { key = "cans_of_beans", label = "cans of beans" },
+]
+
+[[content.options]]
+key     = "toy_shelves"
+label   = "Toys on shelves"
+objects = ["shelf"]
+items   = [
+  { key = "teddy_bear", label = "teddy bear" },
+  { key = "robot", label = "robot" },
+  { key = "soccer_ball", label = "soccer ball" },
+  { key = "block", label = "block" },
+  { key = "doll", label = "doll" },
+  { key = "kite", label = "kite" },
+  { key = "stacking_tower", label = "stacking tower" },
+  { key = "drum", label = "drum" },
+  { key = "tambourine", label = "tambourine" },
+  { key = "shaker", label = "shaker" },
+  { key = "toy_truck", label = "toy truck" },
+  { key = "wire_car", label = "wire car" },
+]
+
+[[content.options]]
+key     = "garden_sprouts"
+label   = "Sprouts in a dirt row"
+objects = ["dirt_row"]
+items   = [
+  { key = "sprout_1", label = "sprout" },
+  { key = "sprout_2", label = "sprout" },
+  { key = "sprout_3", label = "sprout" },
+  { key = "sprout_4", label = "sprout" },
+  { key = "sprout_5", label = "sprout" },
+]
+
+[[content.options]]
+key     = "canoe_people"
+label   = "People in a canoe"
+objects = ["canoe"]
+items   = [
+  { key = "boat_character_1", label = "person" },
+  { key = "boat_character_2", label = "person" },
+  { key = "boat_character_3", label = "person" },
+  { key = "boat_character_4", label = "person" },
+  { key = "boat_character_5", label = "person" },
+  { key = "boat_character_6", label = "person" },
+  { key = "boat_character_7", label = "person" },
+  { key = "boat_character_8", label = "person" },
+  { key = "boat_character_9", label = "person" },
+  { key = "boat_character_10", label = "person" },
+]
+
+[[content.options]]
+key     = "flower_bush"
+label   = "Flowers on a bush"
+objects = ["bush_row"]
+items   = [
+  { key = "flower_pink", label = "pink flower" },
+  { key = "flower_lblue", label = "light blue flower" },
+  { key = "flower_dblue", label = "dark blue flower" },
+  { key = "flower_yellow", label = "yellow flower" },
+  { key = "flower_orange", label = "orange flower" },
+  { key = "flower_red", label = "red flower" },
+  { key = "flower_white", label = "white flower" },
+  { key = "flower_purple", label = "purple flower" },
+]
+
+# ─── SFX ──────────────────────────────────────────────────────────
+
+[sfx.pop_appear]
+label    = "Pop / appear"
+category = "transition"
+
+[sfx.swoosh]
+label    = "Swoosh / woosh"
+category = "success"
+
+[sfx.fanfare]
+label    = "Fanfare"
+category = "celebration"
+
+[sfx.troubleshoot_fail]
+label    = "Troubleshoot fail alert"
+category = "error"
+
+[sfx.ambient_town_music]
+label    = "African town ambient"
+category = "ambient"

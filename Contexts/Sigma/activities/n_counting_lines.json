@@ -1,0 +1,370 @@
+{
+  "specVersion": "1.1-DRAFT",
+  "locale": "en-ZA",
+
+  "meta": {
+    "identifier": "n_counting_lines",
+    "title": "Counting Lines",
+    "subject": "Numeracy",
+    "subconstructs": ["Counting"],
+    "skillsMapping": ["N1.1.1-F"],
+    "activityFamily": "Interactive - Tap",
+    "activityType": "Tap to select answer with audio clue",
+    "layoutTemplate": null,
+    "description": "Count, compare and choose the correct number of items in a line out of 2–3 options according to audio.",
+    "senAffordances": [],
+    "suggestedGlobalParams": {
+      "showDemo": true,
+      "showIntro": true,
+      "showOutro": true
+    }
+  },
+
+  "novelParams": {
+    "beadsPerLine": {
+      "type": "integerRange",
+      "logic": "Lines must never have the same number of items.",
+      "levels": {
+        "L1": { "min": 1, "max": 5 },
+        "L2": { "min": 1, "max": 5 },
+        "L3": { "min": 2, "max": 10 },
+        "L4": { "min": 2, "max": 10 },
+        "L5": { "min": 2, "max": 10 }
+      }
+    },
+    "numberOfLines": {
+      "type": "integer",
+      "levels": {
+        "L1": 2,
+        "L2": 3,
+        "L3": 3,
+        "L4": 3,
+        "L5": 3
+      }
+    },
+    "shapeUniformity": {
+      "type": "string",
+      "enum": ["single", "mixed"],
+      "logic": "Per line.",
+      "levels": {
+        "L1": "single",
+        "L2": "single",
+        "L3": "single",
+        "L4": "single",
+        "L5": "mixed"
+      }
+    },
+    "sizeUniformity": {
+      "type": "string",
+      "enum": ["single", "mixed"],
+      "logic": "Per line.",
+      "levels": {
+        "L1": "single",
+        "L2": "single",
+        "L3": "single",
+        "L4": "mixed",
+        "L5": "single"
+      }
+    },
+    "spacingUniformity": {
+      "type": "string",
+      "enum": ["consistent", "varied"],
+      "logic": "Per line.",
+      "levels": {
+        "L1": "consistent",
+        "L2": "consistent",
+        "L3": "varied",
+        "L4": "consistent",
+        "L5": "varied"
+      }
+    },
+    "requiredTouchCount": {
+      "type": "boolean",
+      "logic": "When true, learners must touch and count every item on every line before selecting. Touched items reduce lightness by 20% with SFX.",
+      "levels": {
+        "L1": true,
+        "L2": true,
+        "L3": false,
+        "L4": false,
+        "L5": false
+      }
+    },
+    "feedbackTiming": {
+      "type": "string",
+      "enum": ["instant", "delayed"],
+      "logic": "Instant: as soon as item is tapped, if incorrect the line goes 50% transparent with incorrect SFX. Delayed: feedback only after check button.",
+      "levels": {
+        "L1": "instant",
+        "L2": "instant",
+        "L3": "delayed",
+        "L4": "delayed",
+        "L5": "delayed"
+      }
+    }
+  },
+
+  "actionSequence": {
+    "core": [
+      {
+        "phase": "intro",
+        "step": 1,
+        "required": false,
+        "actions": ["character_enters"],
+        "audio": { "$ref": "#/strings/intro_prompt" },
+        "sfx": null
+      },
+      {
+        "phase": "demo",
+        "step": 1,
+        "required": false,
+        "actions": ["lines_appear_with_items_centered"],
+        "audio": { "$ref": "#/strings/demo_tap_count_instruction" },
+        "sfx": "bead_slide"
+      },
+      {
+        "phase": "demo",
+        "step": 2,
+        "required": false,
+        "actions": ["pointer_counts_line_1", "pointer_counts_line_2", "pointer_counts_line_3"],
+        "audio": [
+          { "$ref": "#/strings/demo_count_line_1" },
+          { "$ref": "#/strings/demo_count_line_2" },
+          { "$ref": "#/strings/demo_count_line_3" }
+        ],
+        "sfx": "bead_click"
+      },
+      {
+        "phase": "demo",
+        "step": 3,
+        "required": false,
+        "condition": "all_items_touched",
+        "actions": ["item_lightness_reduced_per_touch"],
+        "audio": { "$ref": "#/strings/demo_click_target_line" },
+        "sfx": "success_chime"
+      },
+      {
+        "phase": "demo",
+        "step": 4,
+        "required": false,
+        "condition": "correct_selection",
+        "actions": ["number_appears_right"],
+        "audio": { "$ref": "#/strings/demo_confirm_count" },
+        "sfx": "pop_appear"
+      },
+      {
+        "phase": "main",
+        "step": 1,
+        "required": true,
+        "repeat": "numberOfRounds",
+        "variant": "touch_count_required",
+        "condition": "requiredTouchCount == true",
+        "actions": ["lines_appear", "audio_target_prompt"],
+        "audio": { "$ref": "#/strings/main_count_choose" },
+        "sfx": "bead_slide"
+      },
+      {
+        "phase": "main",
+        "step": 2,
+        "required": true,
+        "variant": "touch_count_required",
+        "condition": "requiredTouchCount == true",
+        "actions": ["learner_touches_each_item", "item_lightness_reduced_per_touch"],
+        "audio": null,
+        "sfx": "bead_click"
+      },
+      {
+        "phase": "main",
+        "step": 3,
+        "required": true,
+        "variant": "touch_count_required",
+        "condition": "feedbackTiming == instant",
+        "actions": ["incorrect_line_50pc_transparent_on_incorrect_tap"],
+        "audio": { "$ref": "#/strings/main_confirm_count" },
+        "sfx": "success_chime"
+      },
+      {
+        "phase": "main",
+        "step": 4,
+        "required": true,
+        "variant": "check_button_required",
+        "condition": "requiredTouchCount == false",
+        "actions": ["check_button_displayed"],
+        "audio": { "$ref": "#/strings/main_choose_then_check" },
+        "sfx": null
+      },
+      {
+        "phase": "main",
+        "step": 5,
+        "required": true,
+        "variant": "check_button_required",
+        "condition": "requiredTouchCount == false",
+        "actions": ["learner_selects_line", "learner_taps_check"],
+        "audio": null,
+        "sfx": null
+      },
+      {
+        "phase": "main",
+        "step": 6,
+        "required": true,
+        "variant": "check_button_required",
+        "condition": "feedbackTiming == delayed",
+        "actions": ["correct_or_incorrect_effect_and_sfx", "incorrect_line_50pc_transparent"],
+        "audio": { "$ref": "#/strings/main_confirm_count" },
+        "sfx": null
+      },
+      {
+        "phase": "outro",
+        "step": 1,
+        "required": false,
+        "actions": ["character_appears"],
+        "audio": { "$ref": "#/strings/outro_celebration" },
+        "sfx": "fanfare"
+      }
+    ],
+    "contextualised": []
+  },
+
+  "strings": {
+    "_comment": "All localisable strings. Placeholders use {param} syntax resolved at runtime.",
+
+    "intro_prompt":            "Can you help {object_character} select the {object} with the correct number of {items}?",
+
+    "demo_tap_count_instruction": "Tap each {item} to count how many {items} are on each {object}.",
+    "demo_count_line_1":       "{num_items_line_1} {object} 1.",
+    "demo_count_line_2":       "{num_items_line_2} {object} 2.",
+    "demo_count_line_3":       "{num_items_line_3} {object} 3.",
+    "demo_click_target_line":  "Click on the {object} with {num_items} {items}.",
+    "demo_confirm_count":      "There are {num_items} {items} on this {object}.",
+
+    "main_count_choose":       "Count the {items} and then choose the {object} with {num_items} {items}.",
+    "main_confirm_count":      "There are {num_items} {items}.",
+    "main_choose_then_check":  "Choose the {object} with {num_items} {items} and then click the check mark when you're done.",
+
+    "outro_celebration":       "Good job!"
+  },
+
+  "characters": {
+    "object_character_rapelang": {
+      "name": "Rapelang",
+      "role": "protagonist",
+      "description": "Helper character used in the necklace/string contextualisation"
+    }
+  },
+
+  "content": {
+    "defaultOption": "beads_on_string",
+    "options": [
+      {
+        "key": "beads_on_string",
+        "label": "Beads on a string",
+        "objects": ["string"],
+        "items": [
+          { "key": "bead_blue_star_med",     "label": "blue star bead" },
+          { "key": "bead_blue_star_small",   "label": "blue star bead" },
+          { "key": "bead_blue_star_big",     "label": "blue star bead" },
+          { "key": "bead_red_circle_med",    "label": "red circle bead" },
+          { "key": "bead_red_circle_small",  "label": "red circle bead" },
+          { "key": "bead_red_circle_big",    "label": "red circle bead" },
+          { "key": "bead_purple_heart_med",  "label": "purple heart bead" },
+          { "key": "bead_purple_heart_small","label": "purple heart bead" },
+          { "key": "bead_orange_elipses_big","label": "orange ellipse bead" },
+          { "key": "bead_orange_elipses_med","label": "orange ellipse bead" },
+          { "key": "bead_orange_elipses_small","label":"orange ellipse bead" },
+          { "key": "bead_green_diamond_med", "label": "green diamond bead" },
+          { "key": "bead_green_diamond_small","label":"green diamond bead" },
+          { "key": "bead_green_diamond_big", "label": "green diamond bead" }
+        ]
+      },
+      {
+        "key": "fruits_on_skewer",
+        "label": "Fruits on a skewer",
+        "objects": ["skewer_stick"],
+        "items": [
+          { "key": "apple_slice",      "label": "apple slice" },
+          { "key": "banana_slice",     "label": "banana slice" },
+          { "key": "mango_slice",      "label": "mango slice" },
+          { "key": "orange_slice",     "label": "orange slice" },
+          { "key": "tangerine_slice",  "label": "tangerine slice" },
+          { "key": "strawberry",       "label": "strawberry" },
+          { "key": "watermelon_slice", "label": "watermelon slice" },
+          { "key": "pineapple_slice",  "label": "pineapple slice" },
+          { "key": "blueberry",        "label": "blueberry" },
+          { "key": "grape",            "label": "grape" }
+        ]
+      },
+      {
+        "key": "cars_on_road",
+        "label": "Cars on a road",
+        "objects": ["road"],
+        "items": [
+          { "key": "car_red",    "label": "red car" },
+          { "key": "car_blue",   "label": "blue car" },
+          { "key": "car_yellow", "label": "yellow car" },
+          { "key": "car_black",  "label": "black car" },
+          { "key": "car_green",  "label": "green car" },
+          { "key": "car_purple", "label": "purple car" },
+          { "key": "truck",      "label": "truck" },
+          { "key": "bicycle",    "label": "bicycle" },
+          { "key": "motorbike",  "label": "motorbike" },
+          { "key": "tractor",    "label": "tractor" },
+          { "key": "pickup",     "label": "pickup" },
+          { "key": "bus",        "label": "bus" },
+          { "key": "minibus",    "label": "minibus" },
+          { "key": "scooter",    "label": "scooter" }
+        ]
+      },
+      {
+        "key": "insects_on_branches",
+        "label": "Insects on branches",
+        "objects": ["sticks_with_leaves"],
+        "items": [
+          { "key": "spider",         "label": "spider" },
+          { "key": "ladybug",        "label": "ladybug" },
+          { "key": "ant",            "label": "ant" },
+          { "key": "bee",            "label": "bee" },
+          { "key": "grasshopper",    "label": "grasshopper" },
+          { "key": "fly",            "label": "fly" },
+          { "key": "praying_mantis", "label": "praying mantis" },
+          { "key": "dung_beetle",    "label": "dung beetle" },
+          { "key": "moth",           "label": "moth" },
+          { "key": "mosquito",       "label": "mosquito" },
+          { "key": "snail",          "label": "snail" }
+        ]
+      },
+      {
+        "key": "birds_on_line",
+        "label": "Birds on a line",
+        "objects": ["string"],
+        "items": [
+          { "key": "mousebird",  "label": "mousebird" },
+          { "key": "starling",   "label": "starling" },
+          { "key": "weaver",     "label": "weaver" },
+          { "key": "bulbul",     "label": "bulbul" },
+          { "key": "sunbird",    "label": "sunbird" },
+          { "key": "finch",      "label": "finch" },
+          { "key": "canary",     "label": "canary" },
+          { "key": "wagtail",    "label": "wagtail" },
+          { "key": "sparrow",    "label": "sparrow" },
+          { "key": "flycatcher", "label": "flycatcher" },
+          { "key": "crow",       "label": "crow" },
+          { "key": "pigeon",     "label": "pigeon" },
+          { "key": "dove",       "label": "dove" },
+          { "key": "robin",      "label": "robin" },
+          { "key": "ox_pecker",  "label": "ox pecker" }
+        ]
+      }
+    ]
+  },
+
+  "sfx": {
+    "bead_slide":    { "label": "Beads sliding",       "category": "interaction" },
+    "bead_click":    { "label": "Bead click",          "category": "interaction" },
+    "pop_appear":    { "label": "Pop / appear",        "category": "transition" },
+    "success_chime": { "label": "Correct / success chime", "category": "success" },
+    "fanfare":       { "label": "Fanfare",             "category": "celebration" }
+  },
+
+  "instructionalHints": [
+    "nh_counting_items_target"
+  ]
+}

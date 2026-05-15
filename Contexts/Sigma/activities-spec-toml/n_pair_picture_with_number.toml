@@ -1,0 +1,205 @@
+# Nanisca activity manifest (TOML form).
+# Identifier: n_pair_picture_with_number
+#
+# Convention: `audio` and `sceneDirection` values are KEYS into the [strings] table,
+# not literal text. The JSON manifest remains the source of truth.
+
+specVersion = "1.1-DRAFT"
+locale      = "en-ZA"
+instructionalHints = ["Ih_drag_drop"]
+
+[meta]
+identifier = "n_pair_picture_with_number"
+title = "Pair picture with number"
+subject = "Numeracy"
+subconstructs = ["Counting"]
+skillsMapping = ["N1.1.1-F"]
+activityFamily = "Interactive - Drag"
+activityType = "Drag and drop into boxes (multiple)"
+description = "Learners drag and drop to match images of groups of beads (1–10) to the correct number."
+
+[meta.suggestedGlobalParams]
+showDemo = true
+showOutro = true
+
+# ─── Novel Parameters ─────────────────────────────────────────────
+
+[novelParams.numberOfDominoes]
+type = "integer"
+logic = "Total number of dominoes (number+picture pairs) presented in a round."
+
+[novelParams.numberOfDominoes.levels]
+L1 = 3
+L2 = 6
+L3 = 3
+
+[novelParams.numberRange]
+type = "integerRange"
+logic = "Range of numbers that can appear on dominoes."
+
+[novelParams.numberRange.levels]
+L1 = { min = 1, max = 10 }
+L2 = { min = 1, max = 10 }
+L3 = { min = 1, max = 10 }
+
+[novelParams.distractorsEnabled]
+type = "boolean"
+logic = "When true, additional unmatched picture cards are included."
+
+[novelParams.distractorsEnabled.levels]
+L1 = false
+L2 = false
+L3 = true
+
+[novelParams.dominoPlacement]
+type = "string"
+enum = ["ascending", "random"]
+
+[novelParams.dominoPlacement.levels]
+L1 = "random"
+L2 = "ascending"
+L3 = "random"
+
+[novelParams.feedbackTiming]
+type = "string"
+enum = ["instant", "delayed"]
+
+[novelParams.feedbackTiming.levels]
+L1 = "instant"
+L2 = "delayed"
+L3 = "delayed"
+
+# ─── Action Sequence ──────────────────────────────────────────────
+
+[[actionSequence.core]]
+phase    = "intro"
+step     = 1
+required = false
+actions  = ["character_enters"]
+audio    = "intro_prompt"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 1
+required = false
+actions  = ["dominoes_appear_with_numbers", "picture_cards_appear_in_selection_area", "teacher_enters"]
+audio    = "demo_match_amounts"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 2
+required = false
+actions  = ["pointer_drags_card_to_domino_1"]
+audio    = "demo_drag_instruction"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 3
+required = false
+actions  = ["pointer_repeats_drag_for_remaining_cards", "check_button_activates_on_last_placement"]
+audio    = "demo_tap_check"
+
+[[actionSequence.core]]
+phase    = "demo"
+step     = 4
+required = false
+actions  = ["pointer_taps_check_button"]
+audio    = "demo_your_turn"
+
+[[actionSequence.core]]
+phase    = "main"
+step     = 1
+required = false
+repeat   = "numberOfRounds"
+actions  = ["dominoes_appear_with_numbers", "picture_cards_appear_in_random_order"]
+audio    = "main_match_amounts"
+
+[[actionSequence.core]]
+phase    = "main"
+step     = 2
+required = true
+actions  = ["learner_drags_cards_to_dominoes", "check_button_activates_when_all_placed"]
+
+[[actionSequence.core]]
+phase    = "outro"
+step     = 1
+required = false
+actions  = ["random_outro_sequence", "may_include_counting_outro_set"]
+sfx      = "fanfare"
+
+# ─── Strings ──────────────────────────────────────────────────────
+# All localisable text. Placeholders use {name} syntax resolved at runtime.
+
+[strings]
+intro_prompt          = "Can you help {object_character} match the pictures with the numbers?"
+demo_match_amounts    = "We need to match the amount of {items} to the right number."
+demo_drag_instruction = "Drag the card with {num_items} {item} to match with the number {num_items}, like this."
+demo_tap_check        = "Tap the check button when you are ready to check your work."
+demo_your_turn        = "Now it's your turn."
+main_match_amounts    = "Match the amounts of {items} to the right numbers."
+
+# ─── Characters ───────────────────────────────────────────────────
+
+[characters.object_character]
+name        = "Helper"
+role        = "protagonist"
+description = "Generic helper character — replace with named character per setting"
+
+# ─── Content ──────────────────────────────────────────────────────
+
+[content]
+defaultOption = "dominoes_beads"
+
+[[content.options]]
+key     = "dominoes_beads"
+label   = "Dominoes with numerals and bead groups"
+objects = ["domino"]
+items   = [
+  { key = "card", label = "card" },
+  { key = "bead_group_1", label = "1 bead" },
+  { key = "bead_group_2", label = "2 beads" },
+  { key = "bead_group_3", label = "3 beads" },
+  { key = "bead_group_4", label = "4 beads" },
+  { key = "bead_group_5", label = "5 beads" },
+  { key = "bead_group_6", label = "6 beads" },
+  { key = "bead_group_7", label = "7 beads" },
+  { key = "bead_group_8", label = "8 beads" },
+  { key = "bead_group_9", label = "9 beads" },
+  { key = "bead_group_10", label = "10 beads" },
+]
+
+[[content.options]]
+key     = "monsters_eyes"
+label   = "Monsters with eyes"
+objects = ["domino"]
+items   = [
+  { key = "monster_0_eye", label = "monster with 0 eyes" },
+  { key = "monster_1_eye", label = "monster with 1 eye" },
+  { key = "monster_2_eye", label = "monster with 2 eyes" },
+  { key = "monster_3_eye", label = "monster with 3 eyes" },
+  { key = "monster_4_eye", label = "monster with 4 eyes" },
+  { key = "monster_5_eye", label = "monster with 5 eyes" },
+  { key = "monster_6_eye", label = "monster with 6 eyes" },
+  { key = "monster_7_eye", label = "monster with 7 eyes" },
+  { key = "monster_8_eye", label = "monster with 8 eyes" },
+  { key = "monster_9_eye", label = "monster with 9 eyes" },
+  { key = "monster_10_eye", label = "monster with 10 eyes" },
+]
+
+[[content.options]]
+key     = "plants_garden_beds"
+label   = "Plants in garden beds"
+objects = ["domino", "garden_box"]
+items   = [
+  { key = "sprout_1", label = "1 sprout" },
+  { key = "sprout_2", label = "2 sprouts" },
+  { key = "sprout_3", label = "3 sprouts" },
+  { key = "sprout_4", label = "4 sprouts" },
+  { key = "sprout_5", label = "5 sprouts" },
+]
+
+# ─── SFX ──────────────────────────────────────────────────────────
+
+[sfx.fanfare]
+label    = "Fanfare"
+category = "celebration"
