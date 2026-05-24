@@ -3,6 +3,8 @@ tags:
   - levelup
   - training
 ---
+[Google Doc](https://docs.google.com/document/d/1ra6N311IvrtP0dHyKiKLeu3Mnn4SQFrcO7FQQ5nTC8k/edit?tab=t.0#heading=h.54npk6feq8hj)
+[SessionLab](https://docs.google.com/document/d/1ra6N311IvrtP0dHyKiKLeu3Mnn4SQFrcO7FQQ5nTC8k/edit?tab=t.0#heading=h.54npk6feq8hj)
 # Overview
 
 > Dates: 15-17 June 2026
