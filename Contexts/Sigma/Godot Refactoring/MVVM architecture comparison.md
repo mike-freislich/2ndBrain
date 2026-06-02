@@ -161,12 +161,12 @@ The VM constructor takes plain data: `(types: Array, rng: Rng, total_rounds: int
 
 **648 lines of headless tests** across four files:
 
-| File | What it tests |
-|---|---|
-| [guided_counting_model_test.gd](tests/activities/guided_counting_sm/guided_counting_model_test/guided_counting_model_test.gd) (153 lines) | Pure model: dot counting, clamping at target, signal emission, round/game completion |
-| [guided_counting_type_selector_test.gd](tests/activities/guided_counting_sm/guided_counting_type_selector_test/guided_counting_type_selector_test.gd) (141 lines) | Selector rules — demo, first-round drum, no-repeat, randomness control (via FakeRng) |
-| [states_test.gd](tests/activities/guided_counting_sm/states_test/states_test.gd) (160 lines) | Every state in isolation — direct `s.handle(&"event")` calls; transitions captured via `_capture(state)` |
-| [guided_counting_view_model_test.gd](tests/activities/guided_counting_sm/guided_counting_view_model_test/guided_counting_view_model_test.gd) (194 lines) | End-to-end VM lifecycle — including `test_full_phase_sequence_single_round` which asserts `["intro","demo","setup","playing","round_end","finished"]` |
+| File                                                                                                                                                              | What it tests                                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [guided_counting_model_test.gd](tests/activities/guided_counting_sm/guided_counting_model_test/guided_counting_model_test.gd) (153 lines)                         | Pure model: dot counting, clamping at target, signal emission, round/game completion                                                                  |
+| [guided_counting_type_selector_test.gd](tests/activities/guided_counting_sm/guided_counting_type_selector_test/guided_counting_type_selector_test.gd) (141 lines) | Selector rules — demo, first-round drum, no-repeat, randomness control (via FakeRng)                                                                  |
+| [states_test.gd](tests/activities/guided_counting_sm/states_test/states_test.gd) (160 lines)                                                                      | Every state in isolation — direct `s.handle(&"event")` calls; transitions captured via `_capture(state)`                                              |
+| [guided_counting_view_model_test.gd](tests/activities/guided_counting_sm/guided_counting_view_model_test/guided_counting_view_model_test.gd) (194 lines)          | End-to-end VM lifecycle — including `test_full_phase_sequence_single_round` which asserts `["intro","demo","setup","playing","round_end","finished"]` |
 
 `FakeRng.push_int(1)` ([guided_counting_view_model_test.gd:164](tests/activities/guided_counting_sm/guided_counting_view_model_test/guided_counting_view_model_test.gd#L164)) is the punchline — "second round picks frog" is provably deterministic in one line.
 
@@ -178,12 +178,12 @@ The VM constructor takes plain data: `(types: Array, rng: Rng, total_rounds: int
 
 ### 4. Deterministic state model — biggest conceptual win
 
-| Aspect | Sm |
-|---|---|
-| Where is "current phase"? | `fsm.current_name: StringName` — one variable, observable via `state_changed(from, to)` |
-| Where do transitions happen? | Each state emits `transition_requested.emit(target, payload)`. Nothing else can transition. |
+| Aspect                        | Sm                                                                                                                        |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Where is "current phase"?     | `fsm.current_name: StringName` — one variable, observable via `state_changed(from, to)`                                   |
+| Where do transitions happen?  | Each state emits `transition_requested.emit(target, payload)`. Nothing else can transition.                               |
 | How is randomness controlled? | Injected `Rng`. `FakeRng.push_int(...)` in tests; `SeededRng` in prod. No `randf()` / `randi()` calls in the model layer. |
-| Side effects vs. transitions? | Side effects live in the View. States touch only `_model.add_dot()` / `_model.complete_round()` and emit transitions. |
+| Side effects vs. transitions? | Side effects live in the View. States touch only `_model.add_dot()` / `_model.complete_round()` and emit transitions.     |
 
 The cleanest case is `playing_state.handle("place")`: dispatch the side-effect (`model.add_dot()`), then if the round just completed, request the transition. Read-then-write order is correct; you can write the property test "place N times → dots == min(N, max_dots)" trivially.
 
@@ -198,21 +198,21 @@ The cleanest case is `playing_state.handle("place")`: dispatch the side-effect (
 
 ### Side-by-side
 
-| Dimension | BT (PR 803, `guided_counting`) | SM (`guided_counting_sm`) |
-|---|---|---|
-| Lifecycle representation | Beehave tree in a `.tscn` + 8 action leaves + 2 conditions + `bt_*_start`/`bt_*_is_done` virtuals on the actor | 5 small state classes + `GameStateMachine` (RefCounted) |
-| Total framework lines | ~190 (tree + actions + conditions + base actor) | ~200 (game_state, machine, view_model_base, view_base, model_base) |
-| Total activity-specific lines | ~530 (main 273, model 94, item_model 47, item 58, etc.) | ~720 (main 276, vm 138, model 63, selector 92, states 93, item 164) |
-| Duplication | 6 near-identical action leaves (~110 lines) | None |
-| Lifecycle as a diagram | Inspect tscn — visually obvious | Inspect VM + states — readable but text-only |
-| "Current phase" introspection | None; BT internal | `fsm.current_name`, `state_changed` signal |
-| Randomness | `Random.randomize()` in waffle_setup | Injected `Rng` (`SeededRng`/`FakeRng`) |
-| Pure model tests | 1 file, model only | 4 files: model + selector + states + VM |
-| FSM/BT-layer tests | None — actions require concrete `ActivityBTMain` cast | 5 states + full VM lifecycle, all headless |
-| Async work + "done" idiom | Three different idioms (latched bool, reset-then-flip bool, model-derived) | One idiom (View reports milestone events; states are event-driven) |
-| Hints | First-class lifecycle (blackboard flag, HintSequence, SelectorReactive + AlwaysFail decorator) | Not in the FSM — View calls `demo.start("_min_demo")` directly |
-| Interrupt semantics | Beehave calls `interrupt()` on actions; actor has no `bt_*_interrupt` hook | None — VM is not interruptible |
-| Skip flags (intro/outro) | Branch inside `bt_intro_start` to set `_intro_done = true` | View calls `_vm.intro_done()` immediately; VM doesn't know |
+| Dimension                     | BT (PR 803, `guided_counting`)                                                                                 | SM (`guided_counting_sm`)                                           |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Lifecycle representation      | Beehave tree in a `.tscn` + 8 action leaves + 2 conditions + `bt_*_start`/`bt_*_is_done` virtuals on the actor | 5 small state classes + `GameStateMachine` (RefCounted)             |
+| Total framework lines         | ~190 (tree + actions + conditions + base actor)                                                                | ~200 (game_state, machine, view_model_base, view_base, model_base)  |
+| Total activity-specific lines | ~530 (main 273, model 94, item_model 47, item 58, etc.)                                                        | ~720 (main 276, vm 138, model 63, selector 92, states 93, item 164) |
+| Duplication                   | 6 near-identical action leaves (~110 lines)                                                                    | None                                                                |
+| Lifecycle as a diagram        | Inspect tscn — visually obvious                                                                                | Inspect VM + states — readable but text-only                        |
+| "Current phase" introspection | None; BT internal                                                                                              | `fsm.current_name`, `state_changed` signal                          |
+| Randomness                    | `Random.randomize()` in waffle_setup                                                                           | Injected `Rng` (`SeededRng`/`FakeRng`)                              |
+| Pure model tests              | 1 file, model only                                                                                             | 4 files: model + selector + states + VM                             |
+| FSM/BT-layer tests            | None — actions require concrete `ActivityBTMain` cast                                                          | 5 states + full VM lifecycle, all headless                          |
+| Async work + "done" idiom     | Three different idioms (latched bool, reset-then-flip bool, model-derived)                                     | One idiom (View reports milestone events; states are event-driven)  |
+| Hints                         | First-class lifecycle (blackboard flag, HintSequence, SelectorReactive + AlwaysFail decorator)                 | Not in the FSM — View calls `demo.start("_min_demo")` directly      |
+| Interrupt semantics           | Beehave calls `interrupt()` on actions; actor has no `bt_*_interrupt` hook                                     | None — VM is not interruptible                                      |
+| Skip flags (intro/outro)      | Branch inside `bt_intro_start` to set `_intro_done = true`                                                     | View calls `_vm.intro_done()` immediately; VM doesn't know          |
 
 ### Where each model wins
 
