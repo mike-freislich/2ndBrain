@@ -1,7 +1,7 @@
 [
   "obsidian-git",
-  "gemini-scribe",
   "obsidian-tasks-plugin",
   "card-board",
-  "templater-obsidian"
+  "templater-obsidian",
+  "gdscript-syntax-highlighting"
 ]
