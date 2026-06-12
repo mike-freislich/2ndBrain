@@ -1,10 +1,15 @@
 
 - Hints System
+- 
 - Content Collider
 	- understand workflow
 	- exercise to define and build a game
+		- flash cards
+		- multiple choice
 - Heuristic Placement - working prototype
+- 
 	- how we're bucketing content/skills
 	- Units Skills
+	- Anatomy of an activity
 - Prioritisation of skills & subskills
 - 
