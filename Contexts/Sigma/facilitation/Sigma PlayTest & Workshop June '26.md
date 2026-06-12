@@ -4,7 +4,8 @@
 - Content Collider
 	- understand workflow
 	- exercise to define and build a game
-		- flash cards
+		- https://docs.google.com/document/d/1621oDDz8kFYHzJj4rM3rvjxecP4Mzle8UKqmSUY7h1I/edit?tab=t.0
+		- flash cards 
 		- multiple choice
 - Heuristic Placement - working prototype
 - 
@@ -12,4 +13,4 @@
 	- Units Skills
 	- Anatomy of an activity
 - Prioritisation of skills & subskills
-- 
+	- https://docs.google.com/document/d/1ecPgZoYxQ2bKmz7Ug-iQcOoj20i8lQTF-4wmI8MshFA/edit?tab=t.0
