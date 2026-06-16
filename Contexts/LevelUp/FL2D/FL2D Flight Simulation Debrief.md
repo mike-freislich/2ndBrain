@@ -22,6 +22,21 @@ tags:
 
 # Debrief
 ---
+
+## Short version
+1. How did the rounds *feel* different
+2. Which round made more *money*
+3. THROUGHPUT
+	1. Calc throughput (economic value €1000) per diamond
+4. CYCLE TIME
+	1. PULL SYSTEM : Calc cycle time (pull first - because push didn't finish red)
+	2. end time = (60s / num items in minuteSlot) * position + minuteSlotIndex
+	3. PUSH SYSTEM  (incomplete RED):
+		1. total diamonds delivered = DR
+		2. remaining until red = DD
+		3. total time + DD * throughput
+5. 
+
 ## Throughput - economic value (€1000 per diamond)
 good representation of **economic value** (€1000 per diamond)
 - **Calculate throughput**
