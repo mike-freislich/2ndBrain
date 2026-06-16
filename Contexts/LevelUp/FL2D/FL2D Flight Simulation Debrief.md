@@ -35,7 +35,9 @@ tags:
 		1. total diamonds delivered = DR
 		2. remaining until red = DD
 		3. total time + DD * throughput
-5. 
+5. System Stability
+6. Work Size and Stability
+7. 
 
 ## Throughput - economic value (€1000 per diamond)
 good representation of **economic value** (€1000 per diamond)
