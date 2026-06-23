@@ -1,4 +1,6 @@
 
+
+# Approaches available for Nanisca Spoken Narrative
 ## Q1
 *We need a lot of spoken narrative in the games that we provide, since learners can't be assumed literate. All instruction is needed in English, Chichewa, French and Swahili. Since we can't run online, we can't use text to speech TTS from the cloud. Our approach so far is to produce the audio via prompting Gemini TTS, and converting the wav files to .ogg to satisfy storage constraints.
 
@@ -46,7 +48,7 @@ One concrete recommendation regardless of approach: get a native speaker of Chic
 
 If you can tell me roughly how big your combinatorial space is per language, and whether the prompts are authored ahead of time or generated procedurally on the device, I can tell you fairly precisely which of these to build and where the storage lands.
 
-----
+# Combinatorial solutions
 ## Q2
 *we have about 500 lessons, each of which has multiple (between 5 and 15) games, each of which has content banks of insert words e.g. numbers from 0 to 1000 or animals, and can be used across about 15 scenes (environments e.g. inside the school, in the jungle, by the river), which creates a huge amount of variance of sentences and inserts.*
 
@@ -69,3 +71,27 @@ But there's a landmine here you should check before building any of it. **In Chi
 The thing I'd most strongly recommend before committing the architecture: have a Chichewa speaker and a French speaker go through your template-and-bank pairings and confirm the carrier is genuinely invariant across each insert set. With banks this large, the silent grammatical bugs — wrong concord, wrong gender, missing elision — multiply just as fast as the sentences do, and they won't show up in English testing at all.
 
 If you can tell me how many _distinct templates_ you have (the deduplicated count, not templates × games) and roughly how the banks break down by size, I can give you a concrete storage estimate per language and tell you where the pre-render / assemble line should fall.
+
+# Using TTS on low performance offline device
+## Q3
+*ok ... and what effective TTS models that can run locally can handle the languages we need?*
+
+## A3
+This is exactly the question where my training data could be stale — TTS language coverage changes constantly, and Chichewa is the make-or-break language. Let me check current support.Piper covers English and French well but I don't see Swahili or Chichewa in its voice list. The critical question is Chichewa. Let me check Meta's MMS, which is the broadest multilingual model, and search specifically for these two languages.The short version: **Meta's MMS is the only locally-runnable model that covers all four of your languages, including Chichewa — which is the one that rules almost everything else out.** But it comes with two catches that probably push you back toward your build-time Gemini pipeline rather than on-device synthesis. Here's the landscape.
+
+**MMS (Massively Multilingual Speech), from Meta.** Separate VITS checkpoint per language, and it has all four: English (`mms-tts-eng`), French (`mms-tts-fra`), Swahili (`mms-tts-swh`), and crucially Chichewa (`mms-tts-nya`). The Chichewa checkpoint is real and documented. The project supports 1107 languages on the VITS architecture. Finding any TTS that does Chichewa at all is rare, so this is the headline. Two important catches, though:
+
+- **License is CC-BY-NC-4.0 — non-commercial.** MMS-TTS uses the VITS architecture under a CC-BY-NC-4.0 license. For a deployed educational product this is a genuine blocker you'd need to clear with whoever handles your licensing, and it likely extends to audio you generate from it. I'm not a lawyer and this is the kind of thing worth checking properly before building on it.
+- **Quality varies sharply by language, and the low-resource ones are weakest.** The African-language MMS checkpoints were largely trained on read religious recordings (New Testament audio), so Chichewa especially can come out with a narrow, "reading-aloud" prosody and shaky coverage of everyday vocabulary and numbers. Acceptable for some uses, but you'd want a native Chichewa speaker to judge whether it clears your bar for children's instruction before you commit.
+
+A practical note: MMS ships as PyTorch/Transformers checkpoints (~100–200 MB each), which is heavy for a weak tablet. People do export the VITS graph to ONNX to run it leaner, but that's engineering work, and inference on a low-end CPU for every utterance is a real cost you're currently avoiding.
+
+**Piper** is the better-engineered option and the one purpose-built for exactly your hardware constraints — real-time on a Raspberry Pi 5 on CPU alone with a small RAM footprint, voices tens of megabytes each, 30+ languages. But its trained voices cover English and French and **not Swahili or Chichewa**, so it can't be your whole solution. Active development moved to OHF-Voice/piper1-gpl and the license is now GPL-3.0 (the old MIT repo is archived), which is another licensing wrinkle to weigh.
+
+**The others don't help you here.** Coqui/XTTS, StyleTTS 2, F5-TTS, Kokoro — all are English-heavy or cover only major languages, several are non-commercial or GPU-hungry, and none reach Chichewa. Not worth pursuing for your case.
+
+**Where this leaves you, given the earlier conversation.** The honest conclusion is that on-device neural TTS doesn't clearly beat what you're already doing. Your content is mostly bounded and authored ahead of time, you have Gemini producing high-quality audio at build time, and the only model that even covers Chichewa locally (MMS) is non-commercial, heavy, and weakest in exactly that language. So the on-device route would mean shipping a worse Chichewa voice, paying CPU cost per utterance, and taking on a license problem — to solve a problem you've largely already solved by pre-rendering.
+
+The one scenario where local TTS genuinely earns its place is if you have content that's generated procedurally _on the device_ and can't be enumerated at build time. If that's not the case, I'd keep Gemini-at-build-time as the spine and use the contour-templating + PSOLA approach for the unbounded numeric tail, rather than putting a neural model on the tablet.
+
+If MMS's Chichewa quality is something you want to evaluate, the fastest path is to run the four checkpoints over a representative sample of your actual lesson sentences and have native speakers rate them — that tells you in an afternoon whether it's even a candidate. Want me to sketch what that evaluation set should cover so it surfaces the prosody and number-agreement problems rather than hiding them?
