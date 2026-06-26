@@ -1,0 +1,4 @@
+- long form text boxes should expand when typing stuff
+- A game may support more than 1 "Subject" -> Construct - > sub-construct etc.
+- text cursor bounces out out box
+- Adding images causes kak![[Screenshot 2026-06-26 at 11.40.20.png|295]]
