@@ -1,6 +1,6 @@
 # Appendix — Good Ideas
 
-*Companion to the [Sigma Engineering Standards](./sigma-engineering-standards.md). The other appendices are about how we ship; this one is about why we think this way. An annotated reading list — essays, papers, books, and one or two jokes — that have shaped good engineering thinking, and ours.*
+*Companion to the [Sigma Engineering Standards](sigma-engineering-standards.md). The other appendices are about how we ship; this one is about why we think this way. An annotated reading list — essays, papers, books, and one or two jokes — that have shaped good engineering thinking, and ours.*
 
 *Some of these are arguments. Some are warnings. A few are just funny. All of them earn their place by changing how a thoughtful reader works the week after.*
 
@@ -170,4 +170,4 @@ For when you want long-form.
 
 ---
 
-*Sigma Good Ideas Appendix — v1.0 · pairs with [main standard](./sigma-engineering-standards.md) v1.1*
+*Sigma Good Ideas Appendix — v1.0 · pairs with [main standard](sigma-engineering-standards.md) v1.1*

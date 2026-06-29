@@ -1,6 +1,6 @@
 # Appendix — Godot
 
-*Stack appendix for the [Sigma Engineering Standards](./sigma-engineering-standards.md). Covers Godot 4.x projects in GDScript (primary) and C# (where used). Game and interactive content have failure modes that differ from services — corrupted saves, vanished assets, frame-rate cliffs — so this appendix leans into those.*
+*Stack appendix for the [Sigma Engineering Standards](sigma-engineering-standards.md). Covers Godot 4.x projects in GDScript (primary) and C# (where used). Game and interactive content have failure modes that differ from services — corrupted saves, vanished assets, frame-rate cliffs — so this appendix leans into those.*
 
 ---
 
@@ -274,4 +274,4 @@ Godot's asset library is the equivalent of npm. Apply the same discipline.
 
 ---
 
-*Sigma Godot Appendix — v1.0 · pairs with [main standard](./sigma-engineering-standards.md) v1.1*
+*Sigma Godot Appendix — v1.0 · pairs with [main standard](sigma-engineering-standards.md) v1.1*

@@ -1,6 +1,6 @@
 # Appendix — Go
 
-*Stack appendix for the [Sigma Engineering Standards](./sigma-engineering-standards.md). Covers services, CLIs, and tooling written in Go.*
+*Stack appendix for the [Sigma Engineering Standards](sigma-engineering-standards.md). Covers services, CLIs, and tooling written in Go.*
 
 ---
 
@@ -261,4 +261,4 @@ Common acceptable additions: `github.com/labstack/echo/v4` (the team-default web
 
 ---
 
-*Sigma Go Appendix — v1.1 · pairs with [main standard](./sigma-engineering-standards.md) v1.1*
+*Sigma Go Appendix — v1.1 · pairs with [main standard](sigma-engineering-standards.md) v1.1*

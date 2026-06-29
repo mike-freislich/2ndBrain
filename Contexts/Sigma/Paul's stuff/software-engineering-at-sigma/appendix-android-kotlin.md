@@ -1,6 +1,6 @@
 # Appendix — Android / Kotlin
 
-*Stack appendix for the [Sigma Engineering Standards](./sigma-engineering-standards.md). Covers Android applications and Kotlin code targeting the Android runtime. Most rules also apply to JVM-only Kotlin; sections marked **(Android)** are platform-specific.*
+*Stack appendix for the [Sigma Engineering Standards](sigma-engineering-standards.md). Covers Android applications and Kotlin code targeting the Android runtime. Most rules also apply to JVM-only Kotlin; sections marked **(Android)** are platform-specific.*
 
 ---
 
@@ -216,4 +216,4 @@ Lockfile (`gradle.lockfile`) committed. Renovate / Dependabot configured.
 
 ---
 
-*Sigma Android/Kotlin Appendix — v1.0 · pairs with [main standard](./sigma-engineering-standards.md) v1.1*
+*Sigma Android/Kotlin Appendix — v1.0 · pairs with [main standard](sigma-engineering-standards.md) v1.1*

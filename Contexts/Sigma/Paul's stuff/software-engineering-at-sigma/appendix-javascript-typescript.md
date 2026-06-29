@@ -1,6 +1,6 @@
 # Appendix — JavaScript / TypeScript
 
-*Stack appendix for the [Sigma Engineering Standards](./sigma-engineering-standards.md). Covers Deno services, frontend web, and any TypeScript codebase. The driving stance: **dependency-minimal, platform-native first.***
+*Stack appendix for the [Sigma Engineering Standards](sigma-engineering-standards.md). Covers Deno services, frontend web, and any TypeScript codebase. The driving stance: **dependency-minimal, platform-native first.***
 
 ---
 
@@ -298,4 +298,4 @@ Before opening a PR in a TS/JS project, the author confirms:
 
 ---
 
-*Sigma JS/TS Appendix — v1.1 · pairs with [main standard](./sigma-engineering-standards.md) v1.1*
+*Sigma JS/TS Appendix — v1.1 · pairs with [main standard](sigma-engineering-standards.md) v1.1*

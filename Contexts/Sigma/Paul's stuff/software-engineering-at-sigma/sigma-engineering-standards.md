@@ -18,13 +18,13 @@ This standard is deliberately small. It is the spine. Stack-specific translation
 5. The **Stack Appendices** translate the principles into concrete idioms for the language and platform you are using. Read the one(s) you need.
 
 ### Stack appendices
-- **[JavaScript / TypeScript](./appendix-javascript-typescript.md)** — Deno, frontend web. *Dependency-minimal stance.*
-- **[Go](./appendix-golang.md)** — services, tooling, CLIs.
-- **[Android / Kotlin](./appendix-android-kotlin.md)** — mobile, host apps.
-- **[Godot](./appendix-godot.md)** — game and interactive content.
+- **[JavaScript / TypeScript](appendix-javascript-typescript.md)** — Deno, frontend web. *Dependency-minimal stance.*
+- **[Go](appendix-golang.md)** — services, tooling, CLIs.
+- **[Android / Kotlin](appendix-android-kotlin.md)** — mobile, host apps.
+- **[Godot](appendix-godot.md)** — game and interactive content.
 
 ### Cultural appendix
-- **[Good Ideas](./appendix-good-ideas.md)** — annotated reading list. The influences behind this standard.
+- **[Good Ideas](appendix-good-ideas.md)** — annotated reading list. The influences behind this standard.
 
 ---
 
@@ -310,5 +310,5 @@ PRODUCTION ADDS
 ---
 
 *Sigma Engineering Standards — v1.2*
-*Stack appendices: [JS/TS](./appendix-javascript-typescript.md) · [Go](./appendix-golang.md) · [Android/Kotlin](./appendix-android-kotlin.md) · [Godot](./appendix-godot.md)*
-*Cultural appendix: [Good Ideas](./appendix-good-ideas.md)*
+*Stack appendices: [JS/TS](appendix-javascript-typescript.md) · [Go](appendix-golang.md) · [Android/Kotlin](appendix-android-kotlin.md) · [Godot](appendix-godot.md)*
+*Cultural appendix: [Good Ideas](appendix-good-ideas.md)*
