@@ -13,7 +13,7 @@
 - [1. Placement](#1-placement)
   - [Good](#good)
   - [Concerns](#concerns)
-- [2. Ground Planes](#2-ground-planes)
+- [2. Ground Planes](#2-ground-planes)[]()
 - [3. Trace Widths](#3-trace-widths)
 - [4. Noise Immunity: Pot ADC Readings](#4-noise-immunity-pot-adc-readings)
 - [5. Audio Quality](#5-audio-quality)
