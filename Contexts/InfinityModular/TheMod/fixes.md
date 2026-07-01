@@ -33,6 +33,22 @@
 
 ---
 
+## Fix Status Dashboard
+
+> Live view of all fix items (sections 4–6). Tick the boxes in their sections below — this table updates automatically. (Requires the **Dataview** community plugin.)
+
+```dataview
+TABLE WITHOUT ID
+  t.section AS Section,
+  t.text AS Fix,
+  choice(t.completed, "✅", "☐") AS Status
+FROM "Contexts/InfinityModular/TheMod/fixes.md"
+FLATTEN file.tasks AS t
+SORT t.line ASC
+```
+
+---
+
 ## 1. Placement
 
 ### Good
@@ -69,16 +85,16 @@
 
 **T3.1. ADC input trace widths are inconsistent — fix this.**
 
-| Net | Width | Notes |
-|-----|-------|-------|
-| ADC_POT1 | 0.2 mm | `:88312` |
-| ADC_POT2 | 0.2 mm | `:87248` |
+| Net      | Width      | Notes                            |
+| -------- | ---------- | -------------------------------- |
+| ADC_POT1 | 0.2 mm     | `:88312`                         |
+| ADC_POT2 | 0.2 mm     | `:87248`                         |
 | ADC_POT3 | **0.4 mm** | `:92056` — wider than the others |
 | ADC_POT4 | **0.4 mm** | `:83183` — wider than the others |
-| ADC_CV1 | 0.3–0.4 mm | `:83247` |
-| ADC_CV2 | 0.4 mm | `:92400` |
-| ADC_CV3 | 0.2 mm | `:92432` |
-| ADC_CV4 | 0.2 mm | `:92488` |
+| ADC_CV1  | 0.3–0.4 mm | `:83247`                         |
+| ADC_CV2  | 0.4 mm     | `:92400`                         |
+| ADC_CV3  | 0.2 mm     | `:92432`                         |
+| ADC_CV4  | 0.2 mm     | `:92488`                         |
 
 Width itself doesn't matter much here (currents are µA). What matters is that the inconsistency suggests these traces were routed without a coherent strategy. **For ADC inputs, pick one width (0.2 mm is fine) and use it uniformly**, and — more importantly — **route each wiper with a ground guard trace alongside it on the same layer, or ensure it has a continuous GND pour on the opposite layer underneath it**. Right now ADC_POT3/4 at 0.4 mm with no guard is just a fatter antenna.
 

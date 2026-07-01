@@ -4,8 +4,8 @@
   "title": "Greet user politely",
   "titleGenerationStatus": "success",
   "createdAt": 1782888578949,
-  "updatedAt": 1782889162937,
-  "lastResponseAt": 1782889162937,
+  "updatedAt": 1782889350515,
+  "lastResponseAt": 1782889350515,
   "sessionId": "ses_0e38cf127ffePw3WscltHOHII2",
   "providerState": {
     "databasePath": "/Users/mikef/.local/share/opencode/opencode.db"
@@ -96,6 +96,18 @@
     {
       "assistantMessageIndex": 6,
       "assistantMessageId": "msg_f1c7998ed001UcbrGvzG43O0yJ",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 7,
+      "assistantMessageId": "msg_f1c7a1fd5001yiQmU1s2iKDKvA",
       "metadata": {
         "providerId": "opencode",
         "providerLabel": "OpenCode",

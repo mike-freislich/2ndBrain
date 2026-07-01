@@ -4,5 +4,6 @@
   "card-board",
   "templater-obsidian",
   "gdscript-syntax-highlighting",
-  "grimoire"
+  "grimoire",
+  "dataview"
 ]
