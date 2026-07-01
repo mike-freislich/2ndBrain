@@ -4,8 +4,8 @@
   "title": "Greet user politely",
   "titleGenerationStatus": "success",
   "createdAt": 1782888578949,
-  "updatedAt": 1782890052949,
-  "lastResponseAt": 1782889892956,
+  "updatedAt": 1782891474945,
+  "lastResponseAt": 1782891474945,
   "sessionId": "ses_0e380824effe7UM3Vvkym29O9g",
   "providerState": {
     "databasePath": "/Users/mikef/.local/share/opencode/opencode.db"
@@ -13,18 +13,204 @@
   "currentNote": "AGENTS.md",
   "usage": {
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 15460,
-    "contextTokens": 17189,
+    "cacheReadInputTokens": 38403,
+    "contextTokens": 45388,
     "contextWindow": 1048576,
     "contextWindowIsAuthoritative": true,
-    "inputTokens": 1729,
+    "inputTokens": 6985,
     "model": "opencode:openrouter/z-ai/glm-5.2",
-    "percentage": 2
+    "percentage": 4
   },
   "assistantResponseMetadata": [
     {
       "assistantMessageIndex": 0,
+      "assistantMessageId": "msg_f1c70c391001Nuj3322cZR9EMM",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 1,
+      "assistantMessageId": "msg_f1c730f15001mTOBag0Zn47NxX",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 2,
+      "assistantMessageId": "msg_f1c761cdc002JVtk3WpMZNORLJ",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 3,
+      "assistantMessageId": "msg_f1c77d6c7001V0dcntQ3LkHoRz",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 4,
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 5,
+      "assistantMessageId": "msg_f1c795a6f001EZqjZgPHwf1OrT",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 6,
+      "assistantMessageId": "msg_f1c7998ed001UcbrGvzG43O0yJ",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 7,
+      "assistantMessageId": "msg_f1c7a1fd5001yiQmU1s2iKDKvA",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 8,
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 9,
       "assistantMessageId": "msg_f1c84afdf00165UK88aQOi0Xnq",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 10,
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 11,
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 12,
+      "assistantMessageId": "msg_f1c956bc40017Q3DIgV1mzaDCA",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 13,
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 14,
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 15,
+      "assistantMessageId": "msg_f1c9b5fa6001GiQaTAPjpKMxiF",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 16,
+      "assistantMessageId": "msg_f1c9c7d8b0019ve6thCClgGg1V",
       "metadata": {
         "providerId": "opencode",
         "providerLabel": "OpenCode",

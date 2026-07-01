@@ -1,0 +1,9 @@
+{
+  "defaultLocation": "right",
+  "ghosttyConfigPath": "~mikef/.config/ghostty/config",
+  "defaultShell": "",
+  "fontFamilyOverride": "JetBrains Mono, Menlo, Consolas, monospace",
+  "fontSizeOverride": 0,
+  "ligatures": true,
+  "scrollbackLines": 10000
+}
