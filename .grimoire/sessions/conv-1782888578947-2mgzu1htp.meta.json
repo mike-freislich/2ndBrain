@@ -4,27 +4,98 @@
   "title": "Greet user politely",
   "titleGenerationStatus": "success",
   "createdAt": 1782888578949,
-  "updatedAt": 1782888584659,
-  "lastResponseAt": 1782888584659,
-  "sessionId": "ses_0e38f3ce7ffe002jKk25KH0P1K",
+  "updatedAt": 1782889162937,
+  "lastResponseAt": 1782889162937,
+  "sessionId": "ses_0e38cf127ffePw3WscltHOHII2",
   "providerState": {
     "databasePath": "/Users/mikef/.local/share/opencode/opencode.db"
   },
   "currentNote": "AGENTS.md",
   "usage": {
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 128,
-    "contextTokens": 7666,
+    "cacheReadInputTokens": 14214,
+    "contextTokens": 16040,
     "contextWindow": 1048576,
     "contextWindowIsAuthoritative": true,
-    "inputTokens": 7538,
+    "inputTokens": 1826,
     "model": "opencode:openrouter/z-ai/glm-5.2",
-    "percentage": 1
+    "percentage": 2
   },
   "assistantResponseMetadata": [
     {
       "assistantMessageIndex": 0,
       "assistantMessageId": "msg_f1c70c391001Nuj3322cZR9EMM",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 1,
+      "assistantMessageId": "msg_f1c730f15001mTOBag0Zn47NxX",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 2,
+      "assistantMessageId": "msg_f1c761cdc002JVtk3WpMZNORLJ",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 3,
+      "assistantMessageId": "msg_f1c77d6c7001V0dcntQ3LkHoRz",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 4,
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 5,
+      "assistantMessageId": "msg_f1c795a6f001EZqjZgPHwf1OrT",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 6,
+      "assistantMessageId": "msg_f1c7998ed001UcbrGvzG43O0yJ",
       "metadata": {
         "providerId": "opencode",
         "providerLabel": "OpenCode",

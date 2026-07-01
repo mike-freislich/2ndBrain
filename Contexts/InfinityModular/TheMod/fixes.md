@@ -96,26 +96,22 @@ Width itself doesn't matter much here (currents are µA). What matters is that t
 
 ## 4. Noise Immunity — Pot ADC Readings
 
-| # | Issue | Severity | Fix | Done |
-|---|-------|----------|-----|------|
-| 1 | B100K source impedance too high for MCP3208 | **High** | Change to B10K, or add 47nF wiper-to-GNDA caps | `- [ ]` |
-| 2 | No wiper decoupling caps at all | **High** | Add 10–100nF per wiper at U17 pin | `- [ ]` |
-| 3 | 2-layer board, no GND plane | **High** | Move to 4-layer (SIG/GND/PWR/SIG) on next spin | `- [ ]` |
-| 4 | Split GNDA/GNDD on 2 layers with no clear star | **High** | Either unify to single GND pour, or add one explicit star bridge at power entry | `- [ ]` |
-| 5 | ADC trace widths inconsistent (0.2 vs 0.4) | Medium | Standardize at 0.2 mm + GND guard | `- [ ]` |
-| 6 | Buck inductor near pots | Medium | Use shielded inductor; relocate buck on next spin | `- [ ]` |
-| 7 | No SPI series termination | Medium | Add 22–33Ω on SCK/MOSI/SS at the 74AHCT125 | `- [ ]` |
+- [ ] **1. B100K source impedance too high for MCP3208** _(High)_ — Change to B10K, or add 47nF wiper-to-GNDA caps
+- [ ] **2. No wiper decoupling caps at all** _(High)_ — Add 10–100nF per wiper at U17 pin
+- [ ] **3. 2-layer board, no GND plane** _(High)_ — Move to 4-layer (SIG/GND/PWR/SIG) on next spin
+- [ ] **4. Split GNDA/GNDD on 2 layers with no clear star** _(High)_ — Either unify to single GND pour, or add one explicit star bridge at power entry
+- [ ] **5. ADC trace widths inconsistent (0.2 vs 0.4)** _(Medium)_ — Standardize at 0.2 mm + GND guard
+- [ ] **6. Buck inductor near pots** _(Medium)_ — Use shielded inductor; relocate buck on next spin
+- [ ] **7. No SPI series termination** _(Medium)_ — Add 22–33Ω on SCK/MOSI/SS at the 74AHCT125
 
 ---
 
 ## 5. Audio Quality
 
-| #   | Issue                                       | Severity | Fix                                                       | Done    |
-| --- | ------------------------------------------- | -------- | --------------------------------------------------------- | ------- |
-| 8   | No ESP32 antenna keepout                    | **High** | Add F.Cu+B.Cu keepout past antenna end                    | `- [ ]  |
-| 9   | I²S traces routed through audio band        | Medium   | Verify no parallel runs with audio; reroute if needed     | `- [ ]` |
-| 10  | Audio traces at 0.2 mm near digital cluster | Low      | Acceptable if not parallel to I²S; add GND guard if doubt | `- [ ]` |
-| 11  | PCM5102 / NJM4556A / pots all on right edge | Low      | Acceptable; watch the pot-to-headphone-amp proximity      | `- [ ]` |
+- [ ] **8. No ESP32 antenna keepout** _(High)_ — Add F.Cu+B.Cu keepout past antenna end
+- [ ] **9. I²S traces routed through audio band** _(Medium)_ — Verify no parallel runs with audio; reroute if needed
+- [ ] **10. Audio traces at 0.2 mm near digital cluster** _(Low)_ — Acceptable if not parallel to I²S; add GND guard if doubt
+- [ ] **11. PCM5102 / NJM4556A / pots all on right edge** _(Low)_ — Acceptable; watch the pot-to-headphone-amp proximity
 
 ---
 
