@@ -1,0 +1,38 @@
+{
+  "id": "conv-1782888578947-2mgzu1htp",
+  "providerId": "opencode",
+  "title": "Greet user politely",
+  "titleGenerationStatus": "success",
+  "createdAt": 1782888578949,
+  "updatedAt": 1782888584659,
+  "lastResponseAt": 1782888584659,
+  "sessionId": "ses_0e38f3ce7ffe002jKk25KH0P1K",
+  "providerState": {
+    "databasePath": "/Users/mikef/.local/share/opencode/opencode.db"
+  },
+  "currentNote": "AGENTS.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 128,
+    "contextTokens": 7666,
+    "contextWindow": 1048576,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 7538,
+    "model": "opencode:openrouter/z-ai/glm-5.2",
+    "percentage": 1
+  },
+  "assistantResponseMetadata": [
+    {
+      "assistantMessageIndex": 0,
+      "assistantMessageId": "msg_f1c70c391001Nuj3322cZR9EMM",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "build": {
+      "prompt": "{file:/Users/mikef/Documents/github/2ndBrain/.grimoire/opencode/system.md}"
+    },
+    "grimoire-full-access": {
+      "mode": "primary",
+      "permission": {
+        "plan_enter": "allow",
+        "question": "allow"
+      },
+      "prompt": "{file:/Users/mikef/Documents/github/2ndBrain/.grimoire/opencode/system.md}"
+    },
+    "grimoire-safe": {
+      "mode": "primary",
+      "permission": {
+        "plan_enter": "allow",
+        "question": "allow",
+        "bash": "ask",
+        "edit": "ask",
+        "write": "ask"
+      },
+      "prompt": "{file:/Users/mikef/Documents/github/2ndBrain/.grimoire/opencode/system.md}"
+    },
+    "plan": {
+      "prompt": "{file:/Users/mikef/Documents/github/2ndBrain/.grimoire/opencode/system.md}"
+    }
+  }
+}
