@@ -1,6 +1,6 @@
 {
   "userName": "",
-  "permissionMode": "full_access",
+  "permissionMode": "normal",
   "model": "opencode:openrouter/z-ai/glm-5.2",
   "thinkingBudget": "off",
   "effortLevel": "high",
@@ -131,7 +131,7 @@
       "preferredThinkingByModel": {
         "openrouter/z-ai/glm-5.2": "high"
       },
-      "selectedMode": "grimoire-full-access",
+      "selectedMode": "grimoire-safe",
       "thinkingOptionsByModel": {
         "openrouter/z-ai/glm-5.2": [
           {
@@ -506,7 +506,7 @@
   "savedProviderPermissionMode": {
     "claude": "normal",
     "codex": "normal",
-    "opencode": "full_access"
+    "opencode": "normal"
   },
   "lastCustomModel": "",
   "lastSeenChangelogVersion": "1.0.25",

@@ -15,7 +15,7 @@
   - [Concerns](#concerns)
 - [2. Ground Planes](#2-ground-planes)
 - [3. Trace Widths](#3-trace-widths)
-- [4. Noise Immunity — Pot ADC Readings](#4-noise-immunity--pot-adc-readings)
+- [4. Noise Immunity: Pot ADC Readings](#4-noise-immunity-pot-adc-readings)
 - [5. Audio Quality](#5-audio-quality)
 - [6. Prioritized Fix List](#6-prioritized-fix-list)
 - [7. Unverified Items](#7-unverified-items)
@@ -110,7 +110,7 @@ Width itself doesn't matter much here (currents are µA). What matters is that t
 
 ---
 
-## 4. Noise Immunity — Pot ADC Readings
+## 4. Noise Immunity: Pot ADC Readings
 
 - [ ] **1. B100K source impedance too high for MCP3208** _(High)_ — Change to B10K, or add 47nF wiper-to-GNDA caps
 - [ ] **2. No wiper decoupling caps at all** _(High)_ — Add 10–100nF per wiper at U17 pin

@@ -4,20 +4,20 @@
   "title": "Greet user politely",
   "titleGenerationStatus": "success",
   "createdAt": 1782888578949,
-  "updatedAt": 1782889350515,
-  "lastResponseAt": 1782889350515,
-  "sessionId": "ses_0e38cf127ffePw3WscltHOHII2",
+  "updatedAt": 1782889892956,
+  "lastResponseAt": 1782889892956,
+  "sessionId": "ses_0e380824effe7UM3Vvkym29O9g",
   "providerState": {
     "databasePath": "/Users/mikef/.local/share/opencode/opencode.db"
   },
   "currentNote": "AGENTS.md",
   "usage": {
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 14214,
-    "contextTokens": 16040,
+    "cacheReadInputTokens": 15460,
+    "contextTokens": 17189,
     "contextWindow": 1048576,
     "contextWindowIsAuthoritative": true,
-    "inputTokens": 1826,
+    "inputTokens": 1729,
     "model": "opencode:openrouter/z-ai/glm-5.2",
     "percentage": 2
   },
@@ -108,6 +108,29 @@
     {
       "assistantMessageIndex": 7,
       "assistantMessageId": "msg_f1c7a1fd5001yiQmU1s2iKDKvA",
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 8,
+      "metadata": {
+        "providerId": "opencode",
+        "providerLabel": "OpenCode",
+        "model": "opencode:openrouter/z-ai/glm-5.2",
+        "modelLabel": "openrouter/z-ai/glm-5.2",
+        "effort": "high",
+        "effortLabel": "High"
+      }
+    },
+    {
+      "assistantMessageIndex": 9,
+      "assistantMessageId": "msg_f1c84afdf00165UK88aQOi0Xnq",
       "metadata": {
         "providerId": "opencode",
         "providerLabel": "OpenCode",
