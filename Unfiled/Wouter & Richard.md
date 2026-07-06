@@ -36,9 +36,9 @@
 	- Observation -> Feelings -> 
 
 
-## **The Four Steps to Expressing Yourself**
+## The Four Steps to Expressing Yourself
 
-1. **Observation:** State exactly what you see or hear, without evaluating or judging. _(e.g., "When you are 15 minutes late...")_ [[1](https://en.wikipedia.org/wiki/Nonviolent_Communication)]
+-  **Observation:** State exactly what you see or hear, without evaluating or judging. _(e.g., "When you are 15 minutes late...")_ [[1](https://en.wikipedia.org/wiki/Nonviolent_Communication)]
 - **Feeling:** Express your emotions about the observation. _(e.g., "...I feel frustrated...")_ [[1](https://en.wikipedia.org/wiki/Nonviolent_Communication)]
 - **Need:** Identify the universal human need that is causing your feeling. Needs are not tied to specific people or actions. _(e.g., "...because I value reliability and respect for time...")_ [[1](https://en.wikipedia.org/wiki/Nonviolent_Communication), [2](https://www.youtube.com/watch?v=INdKgBPEI-8&vl=en)]
 - **Request:** Ask for specific, concrete, and actionable behaviors. Avoid vague demands. _(e.g., "Would you be willing to give me a heads-up if you are running late in the future?")_ [[1](https://en.wikipedia.org/wiki/Nonviolent_Communication)]
