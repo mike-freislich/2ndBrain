@@ -18,4 +18,5 @@
 	- for December - how much instruction
 
 - Actions
+	- What does an essential instructional script look like ... 
 	- 
