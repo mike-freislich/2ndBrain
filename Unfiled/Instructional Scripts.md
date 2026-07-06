@@ -19,4 +19,5 @@
 
 - Actions
 	- What does an essential instructional script look like ... 
+	- What does Lesson 17 look like
 	- 
