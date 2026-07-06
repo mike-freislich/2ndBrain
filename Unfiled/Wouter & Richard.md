@@ -9,3 +9,6 @@
 - facilitate
 
 
+
+- W - I don't always understand what's going on in Richard's head when things go wrong
+- R - understanding the context - level of detail (agree high level, but in the detail)
