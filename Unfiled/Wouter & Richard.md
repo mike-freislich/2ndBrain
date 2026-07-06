@@ -33,7 +33,7 @@
 			- worried, if this is still an important context to how we're interacting today
 		- W - waiting for the next thing
 		- 
-	- Observation -> Feelings -> 
+	- NVC
 
 
 ## The Four Steps to Expressing Yourself
