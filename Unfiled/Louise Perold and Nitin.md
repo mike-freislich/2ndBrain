@@ -28,6 +28,7 @@ Let's get a go ahead
 		- 
 	- Requirement validation
 		- How do we test this?
+	- Language experts
 		- 
 
 
