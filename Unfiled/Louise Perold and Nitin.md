@@ -20,6 +20,12 @@ Let's get a go ahead
 	- **Offline** - 
 		- Updates
 		- Rollback
+	- Scalable architecture for 10000 game permutations
+		- common view
+		- validations
+	- Pipelines
+		- performance, scale, resilience
+		- 
 
 
 
