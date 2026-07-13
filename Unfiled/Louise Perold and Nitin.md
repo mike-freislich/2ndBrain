@@ -12,7 +12,14 @@ Let's get a go ahead
 - What is it that we want to do better?
 	- 
 - Criteria for success - how to measure
-- 
+
+--- 
+- Care abouts
+	- **Analytics** - are we getting the right analytics to make decisions and improve.
+	- **Identity** - resilience of solution, privacy
+	- **Offline** - 
+		- Updates
+		- Rollback
 
 
 
