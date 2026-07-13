@@ -26,6 +26,9 @@ Let's get a go ahead
 	- Pipelines
 		- performance, scale, resilience
 		- 
+	- Requirement validation
+		- How do we test this?
+		- 
 
 
 
