@@ -1,5 +1,5 @@
 
-# Role of PO vs Coach vs Founder
+# Role of PO vs DM vs Founder
 
 ## Product Owner
 

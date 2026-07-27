@@ -1,0 +1,14 @@
+.markdown-preview-view h1,
+.markdown-source-view.mod-cm6 .cm-header-1 {
+  color: #e06c75;
+}
+
+.markdown-preview-view h2,
+.markdown-source-view.mod-cm6 .cm-header-2 {
+  color: #61afef;
+}
+
+.markdown-preview-view h3,
+.markdown-source-view.mod-cm6 .cm-header-3 {
+  color: #98c379;
+}
