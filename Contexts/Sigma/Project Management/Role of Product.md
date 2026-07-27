@@ -1,6 +1,8 @@
 
 # Role of PO vs Coach vs Founder
 
+## Product Owner
+
 
 # Product backlog & sequencing
 
@@ -8,7 +10,7 @@
 A list of all high-level feature areas in the product
 - Analytics
 - Game Specifications
-- 
+- Lesson Authoring
 - ALE
 - Games
 - Infrastructure
