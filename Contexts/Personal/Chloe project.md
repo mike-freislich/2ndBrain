@@ -1,9 +1,13 @@
 
 ## QUESTIONS:
 
- 1. ⁠What ethical issue do you think is most visible or important in our community or daily life right now?
+ 1. **⁠What ethical issue do you think is most visible or important in our community or daily life right now?**
+
+The "rights" and "access" that public and private enterprises seem to have regarding private individuals personal information, and their use of said information, to exploit the market.
 
  2. I am researching ethics in the following area: Influencer Culture & Advertising. How have you personally experienced or been affected by this issue?
+
+
 
 3. How did you deal with / manage the issue personally?
 
