@@ -20,3 +20,10 @@ Visual Design & Formatting Color Contrast:
 - **Meeting Facilitation & Communication Meeting Leadership**: We need the lead visual designer to actively run the VD meetings—walking us through the designs, guiding the discussion, and summarizing agreed-upon decisions before moving on.
 - **Audibility & Engagement**: It's difficult to hear Rado clearly, and he is very quiet during meetings. We need more vocal leadership and clearer communication in these calls. 
 - **Shared Vision**: The app design currently lacks energy and attention to detail. We need the design team to really connect with the vision of the product, as that directly impacts the quality of the work.
+
+![[Pasted image 20260805090402.png]]
+
+![[Pasted image 20260805090419.png]]
+
+Alignment example - question box sightly shorter than end of answer boxes. This design is also just not looking good. Also does not remind me of the brand/ look that we are going for. This one just looks like the mockup I made in the Google sheet, with some colours/ textures added. I think there should have been options/ choices provided for how we want it to look
+![[Pasted image 20260805090442.png]]
