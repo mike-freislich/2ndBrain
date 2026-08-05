@@ -9,7 +9,18 @@
 3. Removal of Narrative has contributed to the problem
 
 
-Some visual design observations: 
+## What's working well
+- Turnaround and response times
+- Awareness of and focus on priority items to support the teams
+- Eagerness to contribute
+- Bubble pop game well designed
+- More attention to the design system e.g.
+	- design components,
+	- new figma page to improve "findability of the right assets"
+	- layout guides for screens and components
+- Assets into github - Early and often
+
+## Opportunities for improvement
 - **Some screens are hard to read due to poor color choices**—like cream text on a tan background in the target area, or green text on green in the number select screen. We need clearer contrast so users can easily see elements.
 - **Alignment & Sizing**: Elements often look misaligned or uneven. For instance, the assessment question box is narrower than the answer boxes, which looks unpolished. 
 - **Component Inconsistency**: Core learning tools need to look the same across all levels, even in mock ups. Before we fixed them, the tens frames varied from level to level, which can confuse kids using the app. 
@@ -19,6 +30,7 @@ Some visual design observations:
 - **Audibility & Engagement**: It's difficult to hear Rado clearly (internet / microphone, and he is very quiet during meetings. We need more vocal leadership and clearer communication in these calls. 
 - **Shared Vision**: The app design currently lacks energy and attention to detail. We need the design team to really connect with the vision of the product, as that directly impacts the quality of the work.
 - **detail paid to researching reference materials when designing elements**: Valeria would do a lot of research and find multiple references to items in African rural communities, for example, in building the backgrounds
+- **Early and regular review of games vs specs** - this would be useful to get feedback on how our actual games-on-tablet are deviating from design spec
 
 ![[Pasted image 20260805090402.png]]
 
@@ -42,6 +54,16 @@ This is an example of options we used to get
 
 
 Also explored more with different backgrounds and styles
-more attenton to colour blindness and contrast
+more attention to colour blindness and contrast
 ![[Pasted image 20260805090928.png]]
 
+
+## What could we - the client - do to help improve things?
+- Provide feedback when we are unsure or uneasy about the designs
+- Help provide input on known / emergent components e.g.
+	- 10's frames
+	- 100's frames
+	- Target Number Tiles / Labels / Fonts
+- Contribute to and review the design system elements
+- 
+- ...
