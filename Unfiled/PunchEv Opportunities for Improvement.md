@@ -65,5 +65,5 @@ more attention to colour blindness and contrast
 	- 100's frames
 	- Target Number Tiles / Labels / Fonts
 - Contribute to and review the design system elements
-- 
+- Work together to refine our process to reduce number of round-trips
 - ...
