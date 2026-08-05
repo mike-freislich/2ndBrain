@@ -1,14 +1,4 @@
 
-1. Design System
-	1. Components
-	2. Colours
-	3. Common graphics rules
-	4. Nanisca UI Documentation : https://docs.google.com/document/d/1ggxSBlIk5358wVyGLT88-GNhlLuDOAG9VxbeG6zORcM/edit?tab=t.dbaw1vkmucmc#heading=h.xh5waz4f7ej7
-	5. 
-2. Actual 
-3. Removal of Narrative has contributed to the problem
-
-
 ## What's working well
 - Turnaround and response times
 - Awareness of and focus on priority items to support the teams
@@ -31,6 +21,7 @@
 - **Shared Vision**: The app design currently lacks energy and attention to detail. We need the design team to really connect with the vision of the product, as that directly impacts the quality of the work.
 - **detail paid to researching reference materials when designing elements**: Valeria would do a lot of research and find multiple references to items in African rural communities, for example, in building the backgrounds
 - **Early and regular review of games vs specs** - this would be useful to get feedback on how our actual games-on-tablet are deviating from design spec
+- **Revive or replace the Nanisca UI Documentation :** https://docs.google.com/document/d/1ggxSBlIk5358wVyGLT88-GNhlLuDOAG9VxbeG6zORcM/edit?tab=t.dbaw1vkmucmc#heading=h.xh5waz4f7ej7
 
 ![[Pasted image 20260805090402.png]]
 
@@ -66,4 +57,6 @@ more attention to colour blindness and contrast
 	- Target Number Tiles / Labels / Fonts
 - Contribute to and review the design system elements
 - Work together to refine our process to reduce number of round-trips
+- Try to better identify game behaviour deep-dives vs. actual design requirements (sometimes the water is murky)
+- ...
 - ...
