@@ -4,14 +4,14 @@
 
 **Sources read**
 
-| Source | Ref |
-|---|---|
-| Godot parameter atlas | `godot-nanisca@origin/develop:docs/Game-Parameters-Reference.md` (auto-generated from `get_game_parameter()` call sites) |
-| Godot per-activity defaults | `godot-nanisca@origin/develop:common/autoloads/config_manager/game_state_defaults.gd` |
-| Godot runtime seams | `common/scenes/activity_main/activity_main.gd`, `common/core/hints/hint_director.gd`, `common/scenes/waffle/waffle.gd`, `addons/nanisca/pck_config_builder/configs/**` |
-| Shared systems | `content/imports/shared-systems/{commonParams,environments,feedbackTypes,hints}.json` |
-| Canonical schema | [`web/server/games/parameters.ts`](../../web/server/games/parameters.ts), [`web/server/shared_systems/types.ts`](../../web/server/shared_systems/types.ts) |
-| Authored corpus | 57 specs in `content/seed/games/` + `content/imports/games/` |
+| Source                      | Ref                                                                                                                                                                    |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Godot parameter atlas       | `godot-nanisca@origin/develop:docs/Game-Parameters-Reference.md` (auto-generated from `get_game_parameter()` call sites)                                               |
+| Godot per-activity defaults | `godot-nanisca@origin/develop:common/autoloads/config_manager/game_state_defaults.gd`                                                                                  |
+| Godot runtime seams         | `common/scenes/activity_main/activity_main.gd`, `common/core/hints/hint_director.gd`, `common/scenes/waffle/waffle.gd`, `addons/nanisca/pck_config_builder/configs/**` |
+| Shared systems              | `content/imports/shared-systems/{commonParams,environments,feedbackTypes,hints}.json`                                                                                  |
+| Canonical schema            | [`web/server/games/parameters.ts`](../../web/server/games/parameters.ts), [`web/server/shared_systems/types.ts`](../../web/server/shared_systems/types.ts)             |
+| Authored corpus             | 57 specs in `content/seed/games/` + `content/imports/games/`                                                                                                           |
 
 **Caveat on the atlas.** It catalogues `get_game_parameter()` call sites only. Anything an activity configures through `@export` values or scene resources is invisible to it — so "the game doesn't implement X" below means *X is not runtime-configurable*, not that the behaviour is absent.
 
