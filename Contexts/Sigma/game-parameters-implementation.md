@@ -91,25 +91,25 @@ Recommendation: **do the flip and the fold once, in the compiler, and normalise 
 
 ### The nine `commonParams`
 
-| Parameter | What it's for | Godot key today | Status |
-|---|---|---|---|
-| `numberOfRounds` (int 1–10, dflt 5) | Main-phase rounds per session | `rounds` | **Implemented** — 17 of 19 activities. Missing in `multiple_choice`, `set_the_scene` |
-| `showIntro` (bool, dflt true) | Play the intro cut-scene | `skip_intro` (**inverted**) | **Implemented** in `ActivityMain` — universal |
-| `showOutro` (bool, dflt true) | Play the outro cut-scene | `skip_outro` (**inverted**) | **Implemented** in `ActivityMain` — universal |
-| `showTutorial` (bool, dflt false) | Play the demo before round 1 | `skip_demo` (**inverted**) | **Implemented** in `ActivityMain` — universal. Note the contract defaults it **off** while Godot defaults `skip_demo` **false** (demo on) — opposite defaults |
-| `showProgress` (bool, dflt true) | Render the progress indicator at all | `show_progress_bar` | **Partial** — read by `multiple_choice` only; the Waffle owns `show_progress_bar()` / `hide_progress_bar()` but no other activity exposes it |
-| `progressMode` (`answer`\|`round`\|`sequence`) | What advances the indicator | — | **Not implemented** |
-| `progressType` (`stars`\|`animalTracks`\|`animalTrackPairs`\|`hearts`) | Indicator artwork family | — | **Not implemented** — `CommonProgressBar` is a bare `TextureProgressBar` with no artwork families |
-| `progressPosition` (`top`\|`bottom`\|`left`\|`right`) | Screen edge it docks to | `Waffle.PROGRESS_BAR_POSITION` | **Partial** — enum is `{TOP, BOTTOM}`; `left`/`right` are uncons­tructable. Not exposed as a game parameter |
-| `hideTeacher` (bool, dflt false) | Hide the teacher character entirely | — | **Not implemented** |
+| Parameter                                                              | What it's for                        | Godot key today                | Status                                                                                                                                                        |
+| ---------------------------------------------------------------------- | ------------------------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `numberOfRounds` (int 1–10, dflt 5)                                    | Main-phase rounds per session        | `rounds`                       | **Implemented** — 17 of 19 activities. Missing in `multiple_choice`, `set_the_scene`                                                                          |
+| `showIntro` (bool, dflt true)                                          | Play the intro cut-scene             | `skip_intro` (**inverted**)    | **Implemented** in `ActivityMain` — universal                                                                                                                 |
+| `showOutro` (bool, dflt true)                                          | Play the outro cut-scene             | `skip_outro` (**inverted**)    | **Implemented** in `ActivityMain` — universal                                                                                                                 |
+| `showTutorial` (bool, dflt false)                                      | Play the demo before round 1         | `skip_demo` (**inverted**)     | **Implemented** in `ActivityMain` — universal. Note the contract defaults it **off** while Godot defaults `skip_demo` **false** (demo on) — opposite defaults |
+| `showProgress` (bool, dflt true)                                       | Render the progress indicator at all | `show_progress_bar`            | **Partial** — read by `multiple_choice` only; the Waffle owns `show_progress_bar()` / `hide_progress_bar()` but no other activity exposes it                  |
+| `progressMode` (`answer`\|`round`\|`sequence`)                         | What advances the indicator          | —                              | **Not implemented**                                                                                                                                           |
+| `progressType` (`stars`\|`animalTracks`\|`animalTrackPairs`\|`hearts`) | Indicator artwork family             | —                              | **Not implemented** — `CommonProgressBar` is a bare `TextureProgressBar` with no artwork families                                                             |
+| `progressPosition` (`top`\|`bottom`\|`left`\|`right`)                  | Screen edge it docks to              | `Waffle.PROGRESS_BAR_POSITION` | **Partial** — enum is `{TOP, BOTTOM}`; `left`/`right` are uncons­tructable. Not exposed as a game parameter                                                   |
+| `hideTeacher` (bool, dflt false)                                       | Hide the teacher character entirely  | —                              | **Not implemented**                                                                                                                                           |
 
 ### The three other system parameters
 
-| Parameter | What it's for | Godot key(s) | Status |
-|---|---|---|---|
+| Parameter                                     | What it's for                                                                                                            | Godot key(s)                                                                                           | Status                                                                                                                |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
 | `feedback.modes` (⊆ `instant`, `delayed`; ≥1) | Which correctness-timing modes the game supports. `instant` = confirm on each action; `delayed` = confirm on CHECK press | `delayed_feedback` (bool) ×5 · `feedback_enabled` + `feedback_type` (String) ×1 · `feedback` (bool) ×1 | **Implemented three different ways.** `new_guided_counting_grid`'s `feedback_type: "delayed"` is closest to canonical |
-| `hintsSystem` (bool, dflt true) | Master switch for the auto-hint ladder | `auto_hints_enabled` | **Implemented** in `HintDirector`. Godot also reads `hint_max_severity` (int, dflt 3) — **not in the contract** |
-| `supportedEnvironments` + `backgroundType` | Which settings the game can be dressed in; how the backdrop paints | `background_path` (raw `res://` path) | **Not implemented** — see §4 |
+| `hintsSystem` (bool, dflt true)               | Master switch for the auto-hint ladder                                                                                   | `auto_hints_enabled`                                                                                   | **Implemented** in `HintDirector`. Godot also reads `hint_max_severity` (int, dflt 3) — **not in the contract**       |
+| `supportedEnvironments` + `backgroundType`    | Which settings the game can be dressed in; how the backdrop paints                                                       | `background_path` (raw `res://` path)                                                                  | **Not implemented** — see §4                                                                                          |
 
 ### Proposed additions to the common contract
 
@@ -170,15 +170,15 @@ Legend: ~~struck~~ = replace with a common / content / environment parameter. **
 
 ### `bubble_pop` — CC: `bubble_pop_review`
 
-| | |
-|---|---|
-| **Godot params** | ~~`rounds`~~ → `numberOfRounds` · ~~`minimal_intro`~~ → `introMode` · ~~`number_range`~~ → content · ~~`content_json`~~ → content slots · **`bubble_fall_seconds`** · **`bubble_fall_seconds_min`** · **`bubble_fall_seconds_max`** · **`bubble_spawn_interval`** · **`max_bubbles_on_screen`** · **`required_pops_per_round`** |
-| **Spec novel params** | ~~"Number of rounds"~~ · **"Max bubbles"** · **"Bubble speed"** · **"Variations of target"** · **"Number of targets on screen"** · **"Number of targets per round"** · **"Target shows on screen"** |
-| **Common implemented** | rounds, intro/outro/tutorial (via ActivityMain) |
-| **Common missing** | showProgress, feedback modes (instant-only by nature — declare it), environments (spec has `[]`) |
-| **Content needed** | `targets` (contentBank, number bank slice) — replaces `number_range` **and** the `content_json` blob. Spec already declares a `TargetNum` slot; wire it |
-| **Environment** | Needed. Bubbles float over any backdrop — all 7 keys viable |
-| **Note** | `content_json: String` is a JSON blob passed as a parameter. This is the clearest case for typed content slots replacing stringly-typed config |
+|                        |                                                                                                                                                                                                                                                                                                                                 |     |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| **Godot params**       | ~~`rounds`~~ → `numberOfRounds` · ~~`minimal_intro`~~ → `introMode` · ~~`number_range`~~ → content · ~~`content_json`~~ → content slots · **`bubble_fall_seconds`** · **`bubble_fall_seconds_min`** · **`bubble_fall_seconds_max`** · **`bubble_spawn_interval`** · **`max_bubbles_on_screen`** · **`required_pops_per_round`** |     |
+| **Spec novel params**  | ~~"Number of rounds"~~ · **"Max bubbles"** · **"Bubble speed"** · **"Variations of target"** · **"Number of targets on screen"** · **"Number of targets per round"** · **"Target shows on screen"**                                                                                                                             |     |
+| **Common implemented** | rounds, intro/outro/tutorial (via ActivityMain)                                                                                                                                                                                                                                                                                 |     |
+| **Common missing**     | showProgress, feedback modes (instant-only by nature — declare it), environments (spec has `[]`)                                                                                                                                                                                                                                |     |
+| **Content needed**     | `targets` (contentBank, number bank slice) — replaces `number_range` **and** the `content_json` blob. Spec already declares a `TargetNum` slot; wire it                                                                                                                                                                         |     |
+| **Environment**        | Needed. Bubbles float over any backdrop — all 7 keys viable                                                                                                                                                                                                                                                                     |     |
+| **Note**               | `content_json: String` is a JSON blob passed as a parameter. This is the clearest case for typed content slots replacing stringly-typed config                                                                                                                                                                                  |     |
 
 ---
 
