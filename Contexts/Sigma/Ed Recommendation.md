@@ -1,0 +1,3 @@
+
+
+Edouard worked with us at Sigma Digital - small global team, giant greenfield EdTech product. Ed's attention to detail, self-reflective and personable nature, together with his extensive experience in game development helped the team to establish the architectural foundations needed to launchpad our product development going forward. Ed's role, amongst other things entailed : providing technical leadership of 6 person game development team, growing junior devs and guiding senior devs, establishing the core game architecture together with our platform and chief architects, collaborating with our visual design partner, and helping to produce games at scale. We thank Ed for his contributions and can recommend him as an asset to game development projects in the future.
