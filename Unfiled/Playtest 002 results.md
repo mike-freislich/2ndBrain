@@ -3,3 +3,7 @@
 - but if not clear on the goal ... no help
 
 - on game reset - what did the user do wrong?
+
+
+
+the real factor is instruction = 20 minutes
