@@ -1,13 +1,19 @@
 I made a list of "problem" assets that we need to decide what to do with:
-- Match Word word-pill back pattern variants 13-15 uses ratio 2057×800   compared to variants 1-12 using 803×308. Design needs to update?
-	- POSSIBLY. what are the implications of leaving it?
-- car and house are png! No svg versions exist. Delete or create svg?
-	- car and house? Where are these assets used?
-- speech_bubble_nib.svg redundant, full speech bubble svg exists in shared-game-assets. Recommend deletion.
-	- 
+- *Match Word word-pill back pattern variants 13-15 uses ratio 2057×800   compared to variants 1-12 using 803×308. Design needs to update?*
+	- **POSSIBLY. what are the implications of leaving it?**
+- *car and house are png! No svg versions exist. Delete or create svg?*
+	- **car and house? Where are these assets used?**
+- *speech_bubble_nib.svg redundant, full speech bubble svg exists in shared-game-assets. Recommend deletion.*
+	- **assuming the nib was not in the assets-repo ... then yes sure ... delete**
 - microphone_icon.svg redundant. Have literally not seen it once in use, nor does it seem custom. Recommend deletion.
+	- **delete**
 - z_placeholder.svg redundant (godot icon, I think its a default asset added automatically by godot). I see no reason to move this asset, we have many other suitable placeholders.
+	- **delete**
 - res://common/assets/art/UI/Container.png does not exist but is referenced.   Recommend move (to shared-game-assets) and use nine_patch_container.
+	- **OK**
 - Old fonts, specifically tracing (light/regular), use a different weight compared to shared fonts (has no light/regular variant) so it might seem thicker/thinner than previously. Leave as is, or match weights, or create light/regular variants?
+	- **I'd put them all in assets repo, and list the games/components that use variants, and get a call from VDesign**
 - All shared reading pages are jpg. Make svg variants?
+	- **hmm... these will always be raster images I suspect, since they come from nano-banana. Will need to check with Paul.** 
 - grain_into_bag.jpg & ape_cape_cake.jpg. Make svg variants?
+	- **Same as shared reading**
