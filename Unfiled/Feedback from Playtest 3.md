@@ -11,8 +11,9 @@ CAP
 - tapping the "a" was confusing
 - kids are saying the word
 - cap to cape -> not sure what to do
-- 
 
+See and Say
+- learners repeating the word louder
 
 HINTS
 - "tap here when you're done" - happening too quickly for some.
