@@ -17,7 +17,8 @@ See and Say
 
 Reading
 - back button
-- speed of teacher reading might be too long
+- speed of teacher reading might be too longr
+- 
 
 HINTS
 - "tap here when you're done" - happening too quickly for some.
