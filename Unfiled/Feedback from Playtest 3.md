@@ -15,5 +15,9 @@ CAP
 See and Say
 - learners repeating the word louder
 
+Reading
+- back button
+- speed of teacher reading might be too long
+
 HINTS
 - "tap here when you're done" - happening too quickly for some.
