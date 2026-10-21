@@ -25,11 +25,12 @@ All games complete
 	- Environments
 	- Design System
 
-Environments
-Hints
-Analytics
-Placement Test
-Design System
+All systems in all games
+- Environments
+- Hints
+- Analytics
+- Placement Test
+- Design System
 
 
 # 15 Dec - Ready
