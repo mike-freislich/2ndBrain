@@ -6,7 +6,7 @@
 All lessons
 - Literacy first (153)
 	- Approval
-		- AI
+		- AI approval
 		- Human
 	- Auto generation
 		- 
@@ -16,8 +16,8 @@ All lessons
 All games complete
 - 73 Numeracy Games
 	- 60 to go
-	- 17 colliderizing
-	- 30 AI first then colliderize
+	- 17 Colliderizing
+	- 30 AI first then Colliderize
 - Visual Design -- 
 	- Components 
 	- Teacher
