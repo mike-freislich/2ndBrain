@@ -15,18 +15,21 @@ All lessons
 
 All games complete
 - 73 Numeracy Games
+	- 60 to go
+	- 17 colliderizing
+	- 30 AI first then colliderize
 - Visual Design -- 
-	- components 
-	- teacher
+	- Components 
+	- Teacher
 	- UI
 	- Environments
+	- Design System
+
 Environments
 Hints
 Analytics
 Placement Test
 Design System
-
-
 
 
 # 15 Dec - Ready
