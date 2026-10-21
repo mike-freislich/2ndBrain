@@ -2,6 +2,17 @@
 
 
 # End November -- 5 weeks
+
+All lessons
+- Literacy first (153)
+	- Approval
+		- AI
+		- Human
+	- Auto generation
+		- 
+- Numeracy next
+	- 
+
 All games complete
 - 73 Numeracy Games
 - Visual Design -- 
@@ -14,7 +25,7 @@ Hints
 Analytics
 Placement Test
 Design System
-All lessons
+
 
 
 
