@@ -1,5 +1,12 @@
 
 - Rado
 	- environments what's outstanding?
+		- [/] **Home** - wide, close, play1, play2
+		- [ ] **River** - wide, (close), play1, play2 (update figma block - use the one with the block)
+		- [/] **School** - update figma with the table for play2?
+		- [ ] **Market** - wide - need : close, play1, play2
+		- [ ] **Shop** - wide, close - need :  (play1, play2)
+		- [/] **Savannah** - wide, close, play1, play2
+		- [ ] 
 	- new process
 - 
