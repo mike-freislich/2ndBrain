@@ -3,6 +3,10 @@
 3. sounds natural / pacing and intonation
 4. maintains the accent
 
+Lesson content review:
+need a way to @mention a person or a group
+![[Screenshot 2026-10-30 at 12.15.48.png]]
+
 Compulsory notes on change requested and back into review
 History in place
 
