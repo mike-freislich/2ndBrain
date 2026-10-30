@@ -7,6 +7,10 @@ Lesson content review:
 need a way to @mention a person or a group
 ![[Screenshot 2026-10-30 at 12.15.48.png]]
 
+
+Mandatory / optional image should be compared against use in the lesson .... to see if the content is actually required.
+
+
 Compulsory notes on change requested and back into review
 History in place
 
