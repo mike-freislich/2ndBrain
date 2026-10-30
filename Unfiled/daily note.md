@@ -10,6 +10,8 @@ need a way to @mention a person or a group
 
 Mandatory / optional image should be compared against use in the lesson .... to see if the content is actually required.
 
+Regenerating images should ask to accept before replacing
+
 
 Compulsory notes on change requested and back into review
 History in place
