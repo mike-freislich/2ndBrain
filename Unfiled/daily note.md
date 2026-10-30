@@ -12,6 +12,8 @@ Mandatory / optional image should be compared against use in the lesson .... to 
 
 Regenerating images should ask to accept before replacing
 
+Approval Mode ---- can jump straight to approval state
+
 
 Compulsory notes on change requested and back into review
 History in place
