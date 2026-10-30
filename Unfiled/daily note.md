@@ -5,3 +5,7 @@
 
 Compulsory notes on change requested and back into review
 History in place
+
+
+Set the Scene
+- word and phoneme references
