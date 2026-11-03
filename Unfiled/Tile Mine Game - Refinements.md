@@ -63,10 +63,24 @@ With `d = levelIndex / 12`:
 - The soundtrack plays 9 dB below the sound effects.
 
 
-More layout tweaks
-- [ ] change the reset button - use a bottom left corner button asset for the reset button
-- [ ] change the map button - use a bottom right corner button asset for the map button
-- [ ] letter tray: round the placeholder boxes to match the letter tiles.
+---
+
+
+When the score is adding the bonus at the end of the round, can we make this look prettier? At the moment it's just numbers on a box... 
+perhaps it could show more visually what is happening, e.g.
+- show points for collection of sand, diamonds and other scoreable elements
+- drain the timer into the total score...  show the water flowing into the timer score.
+
+Perhaps the score can be represented instead of a number for the level, it could be a star-number out of 5... showing 5 star place holders and how many stars are actually filled.
+
+In game, if the game is reset when the timer runs out, please reset the score. 
+
+--- 
+
+## More layout tweaks
+- [/] change the reset button - use a bottom left corner button asset for the reset button
+- [/] change the map button - use a bottom right corner button asset for the map button
+- [/] letter tray: round the placeholder boxes to match the letter tiles.
   and make them dotted lines.
-- [ ] Count down timer indicator - remove the timer bar from the title bar. create a fun vertical countdown timer component. Place it on the left of the screen, perhaps it can be something like water running out.
+- [/] Count down timer indicator - remove the timer bar from the title bar. create a fun vertical countdown timer component. Place it on the left of the screen, perhaps it can be something like water running out.
 
