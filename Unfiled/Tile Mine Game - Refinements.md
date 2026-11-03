@@ -65,15 +65,14 @@ With `d = levelIndex / 12`:
 
 ---
 
+- [ ] When the score is adding the bonus at the end of the round, can we make this look prettier? At the moment it's just numbers on a box... 
+	- [ ] perhaps it could show more visually what is happening, e.g.
+	- [ ] show points for collection of sand, diamonds and other scoreable elements
+	- [ ] drain the timer into the total score...  show the water flowing into the timer score.
 
-When the score is adding the bonus at the end of the round, can we make this look prettier? At the moment it's just numbers on a box... 
-perhaps it could show more visually what is happening, e.g.
-- show points for collection of sand, diamonds and other scoreable elements
-- drain the timer into the total score...  show the water flowing into the timer score.
+- [ ] Perhaps the score can be represented instead of a number for the level, it could be a star-number out of 5... showing 5 star place holders and how many stars are actually filled.
 
-Perhaps the score can be represented instead of a number for the level, it could be a star-number out of 5... showing 5 star place holders and how many stars are actually filled.
-
-In game, if the game is reset when the timer runs out, please reset the score. 
+- [ ] In game, if the game is reset when the timer runs out, please reset the score. 
 
 --- 
 
