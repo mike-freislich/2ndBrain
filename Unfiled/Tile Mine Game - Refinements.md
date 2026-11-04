@@ -1,6 +1,8 @@
 
 
- I had a thought ... let's say that there are a maximum of 20 levels of difficulty. If we baked a map for each level that could handle a word at the maximum word length of 10 letter/safe tiles ... then in theory the map should work for any word between 3 and 10 letters.... where a running game level only needs say 3 letters, the other letter spots can be replaced with diamonds at runtime... that way we can validate 20 playable maps, and not need runtime generation at all.
+ ok ... and then I want to come back to this:
+
+   I had a thought ... let's say that there are a maximum of 20 levels of difficulty. If we baked a map for each level that could handle a word at the maximum word length of 10 letter/safe tiles ... then in theory the map should work for any word between 3 and 10 letters.... where a running game level only needs say 3 letters, the other letter spots can be replaced with safes that unlock diamonds... that way we can validate 20 playable maps, and not need runtime generation at all.
 
 
 
