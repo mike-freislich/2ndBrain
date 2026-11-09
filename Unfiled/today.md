@@ -1,6 +1,6 @@
 
 **Lessons and Content**
-- clearly defined communication  and heuristics.
+- clearly defined communication  abnd heuristics.
 
 **Games approval (batch)**
 
