@@ -10,4 +10,4 @@
 	2. staging - testing - confirm actual game is working, hotfixes and backmerge - promote when "enough" games are tested?
 	3. stable - the place where known good games exist (although will include things from develop that are known to not be working? And are marked as such in collider / manifest?
 	4. main - games 
-5. No more sweeping A.I. changes without a clear communication
+5. sweeping A.I. changes across content with clear communication, and at least "permission"
